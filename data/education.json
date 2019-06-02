@@ -1,0 +1,46 @@
+[
+    {
+        "year": 2014,
+        "titulation": {
+            "name": "Doctor of Philosophy (PhD.) in Industrial Economics",
+            "link": "http://www.uv.es/uvweb/universidad/en/estudios-postgrado/doctorados/programas-doctorado-rd-99/doctorat-1285888753863/Titulacio.html?id=1285887589327"
+        },
+        "university": {
+            "name": "University of Valencia",
+            "link": "http://www.uv.es"
+        }
+    },
+    {
+        "year": 2011,
+        "titulation": {
+            "name": "Masters in Industrial Economics",
+            "link": "https://www.uv.es/uvweb/master-economia/ca/master-universitari-economia-1285903702269.html"
+        },
+        "university": {
+            "name": "University of Valencia",
+            "link": "http://www.uv.es"
+        }
+    },
+    {
+        "year": 2010,
+        "titulation": {
+            "name": "Engineer's Degree in Computer Science",
+            "link": "https://www.uv.es/etse"
+        },
+        "university": {
+            "name": "University of Valencia",
+            "link": "http://www.uv.es"
+        }
+    },
+    {
+        "year": 2010,
+        "titulation": {
+            "name": "Bachelor's's Degree in Telecomunications",
+            "link": "https://www.uv.es/etse"
+        },
+        "university": {
+            "name": "University of Valencia",
+            "link": "http://www.uv.es"
+        }
+    }
+]

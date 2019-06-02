@@ -1,0 +1,72 @@
+[
+    {
+        "title": "IBSEN project web infrastructure",
+        "description": "Web infrastructure to support the research activity of the H2020 project.",
+        "items": [
+            {
+                "title": "website",
+                "link": "http://ibsen-h2020.eu"
+            },
+            {
+                "title": "recruitment system",
+                "link": "http://participants.ibsen-h2020.eu"
+            }
+        ]
+    },
+    {
+        "title": "LINEEX web infrastructure",
+        "description": "Web infrastructure to support the research activity of the Laboratory.",
+        "items": [
+            {
+                "title": "website",
+                "link": "http://lineex.es"
+            },
+            {
+                "title": "participants portal",
+                "link": "http://participants.lineex.es"
+            },
+            {
+                "title": "recruitment system",
+                "img": "register.png"
+            },
+            {
+                "title": "Wake On Lan",
+                "img": "wol.png"
+            }
+        ]
+    },
+    {
+        "title": "Master in Economics, University of Valencia",
+        "description": "Website and students application system."
+    },
+    {
+        "title": "GLOCREd",
+        "description": "The research network in 'Globalization, Growth and Inequality (19th-21st centuries)'. Website of the network, content management system (News, events, ...), personal profile manager.",
+        "items": [
+            {
+                "title": "website",
+                "link": "http://glocred.es"
+            }
+        ]
+    },
+    {
+        "title": "Despensa Serrana",
+        "description": "Online store of meat, wines and artisan food..",
+        "items": [
+            {
+                "title": "shop",
+                "link": "https://despensaserrana.com"
+            }
+        ]
+    },
+    {
+        "title": "Integra-T experience",
+        "description": "Alternative trip agency.",
+        "items": [
+            {
+                "title": "website",
+                "link": "https://despensaserrana.com"
+            }
+        ]
+    }
+]
