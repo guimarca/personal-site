@@ -15,7 +15,7 @@ install:
 test:
   - npm test
 
-build:
+script:
   - npm run build
 
 deploy:
