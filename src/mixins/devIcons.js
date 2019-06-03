@@ -1,5 +1,6 @@
 const TECHNOLOGIES = [ 'python', 'git', 'django', 'jenkins', 'docker', 'kubernetes', 'php', 'java',
-  'c++', 'c', 'angular', 'mysql', 'postgresql', 'linux', 'android', 'yii2', 'gitlab', 'javascript' ]
+  'c++', 'c', 'angular', 'mysql', 'postgresql', 'linux', 'android', 'yii2', 'gitlab', 'javascript',
+  'js', 'google', 'bootstrap' ]
 
 export default {
   props: [ 'text' ],
@@ -31,6 +32,8 @@ function translateSpecialCases (tech) {
       return 'angularjs'
     case 'yii2':
       return 'yii'
+    case 'js':
+      return 'javascript'
     default:
       return tech
   }
