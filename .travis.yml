@@ -12,15 +12,13 @@ cache:
 install:
   - npm install
 
-test:
-  - npm test
-
 script:
+  - npm test
   - npm run build
 
 deploy:
   provider: pages
-  repo: guimarca.github.io
+  repo: guimarca/guimarca.github.io
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   local_dir: dist
