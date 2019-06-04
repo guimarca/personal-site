@@ -1,6 +1,6 @@
 <template>
   <page-section section-title="contact" section-slug="contact">
-    {{ contact.email | email }}
+    <div v-html="safeEmail"></div>
     <div class="contact__profiles">
       <div v-for="profile in contact.profiles" :key="profile.name" :class="profile.slug">
         <a :href="profile.link"><img :src="getImage(profile.image)" alt="LinkedIn Profile"></a>
@@ -24,9 +24,15 @@ export default {
       contact: contactData
     }
   },
-  filters: {
-    email: (email) => {
-      return email.replace('.', ' (dot) ').replace('@', ' (at) ')
+  computed: {
+    safeEmail () {
+      console.log(this.contact.email)
+      console.log(this.contact.email
+        .replace('.', ' (dot) ')
+        .replace('@', ' (at) '))
+      return this.contact.email
+        .replace('.', ' (dot) ')
+        .replace('@', ' (at) ')
     }
   }
 }
