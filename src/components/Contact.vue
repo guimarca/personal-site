@@ -26,10 +26,6 @@ export default {
   },
   computed: {
     safeEmail () {
-      console.log(this.contact.email)
-      console.log(this.contact.email
-        .replace('.', ' (dot) ')
-        .replace('@', ' (at) '))
       return this.contact.email
         .replace('.', ' (dot) ')
         .replace('@', ' (at) ')
