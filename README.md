@@ -1,6 +1,11 @@
-# personal-site
+# Personal website
+
+https://guimarca.github.io
 
 > Guillem Martinez-Canovas
+
+[![Build Status](https://travis-ci.org/guimarca/personal-site.svg?branch=master)](https://travis-ci.org/guimarca/personal-site)
+
 
 ## Build Setup
 
