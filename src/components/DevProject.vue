@@ -32,5 +32,9 @@ export default {
 <style>
 .dev-project__title {
   font-weight: bold;
+  margin-right: 5px;
+}
+.dev-project__description {
+  margin-right: 5px;
 }
 </style>
