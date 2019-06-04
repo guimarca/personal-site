@@ -2,7 +2,7 @@
   <page-section section-title="positions" section-slug="positions" v-if="positions.length > 0">
     <div class="positions-entry" v-for="entry in positions" :key="entry.title">
       <div class="positions-entry__dates">
-        <p>{{ entry.date.from }} - {{ entry.date.to }}</p>
+        <p>{{ entry.date.to }}<br>&uarr;<br>{{ entry.date.from }}</p>
       </div>
       <div class="positions-entry__content">
         <div class="positions-entry__title">
@@ -38,13 +38,14 @@ export default {
 
 <style>
 .positions-entry {
-  text-align: left;
   display: flex;
+  margin-bottom: 10px;
 }
 .positions-entry__dates {
-  width: 170px;
-  padding-right: 10px;
+  width: 85px;
+  padding-right: 20px;
   font-weight: bold;
+  text-align: right;
 }
 .positions-entry__content {
   width: 100%;

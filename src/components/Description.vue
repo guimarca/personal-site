@@ -1,6 +1,6 @@
 <template>
   <section id="description" class="section">
-    <h1 class="section-title">hello</h1>
+    <h1 class="description__title">hello</h1>
     <p class="description__text" v-for="(text, index) in description.text" :key="index">
       <vue-markdown>{{ devIcons(text) }}</vue-markdown>
     </p>
@@ -28,6 +28,9 @@ export default {
 <style scoped>
 img {
   height: 250px;
+}
+.description__title {
+ font-size: 42px;
 }
 .description__text {
   text-align: justify;

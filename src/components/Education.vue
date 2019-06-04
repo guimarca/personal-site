@@ -31,19 +31,18 @@ export default {
 </script>
 
 <style>
-.education {
-  margin: 0 auto;
-  width: 90%;
-}
 .education-entry {
   display: flex;
-  margin: 20px 5px;;
+  margin: 20px 0;
 }
 .education-entry__year {
+  width: 85px;
+  padding-right: 20px;
   font-weight: bold;
+  text-align: right;
 }
 .education-entry__content {
-  padding-left: 15px;
+  width: 100%;
   text-align: justify;
 }
 </style>

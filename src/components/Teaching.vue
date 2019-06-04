@@ -3,7 +3,7 @@
       <div class="teaching">
         <div class="teaching-entry" v-for="entry in teaching" :key="entry.title">
           <div class="teaching-entry__year">
-            {{ entry.period.start }} - {{ entry.period.end }}
+            {{ entry.period.start }}/{{ entry.period.end }}
           </div>
           <div class="teaching-entry__content">
             <a :href="entry.course.link">{{ entry.course.name }}</a>,
@@ -32,21 +32,18 @@ export default {
 </script>
 
 <style>
-.teaching {
-  margin: 0 auto;
-  width: 90%;
-}
 .teaching-entry {
   display: flex;
   margin: 20px 5px;
 }
 .teaching-entry__year {
-  width: 140px;
-  padding-right: 5px;
+  width: 85px;
+  padding-right: 20px;
   font-weight: bold;
+  text-align: right;
 }
 .teaching-entry__content {
-  padding-left: 15px;
+  width: 100%;
   text-align: justify;
 }
 </style>
