@@ -30,21 +30,25 @@ export default {
       if (this.researchArticle.journal) {
         return `. <i>${this.researchArticle.journal}</i>`
       }
+      return ''
     },
     volumeAndPages () {
       if (this.researchArticle.volume && this.researchArticle.pages) {
         return `. ${this.researchArticle.volume}, ${this.researchArticle.pages}`
       }
+      return ''
     },
     year () {
       if (this.researchArticle.year) {
         return `. (${this.researchArticle.year})`
       }
+      return ''
     },
     link () {
       if (this.researchArticle.link) {
         return `<a href="${this.researchArticle.link}">Link</a>.`
       }
+      return ''
     }
   }
 }
