@@ -6,30 +6,20 @@ https://guimarca.github.io
 
 [![Build Status](https://travis-ci.org/guimarca/personal-site.svg?branch=master)](https://travis-ci.org/guimarca/personal-site)
 
-## Project setup
-```
-npm install
+## Getting Started
+
+First, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+To build for production:
 
-### Compiles and minifies for production
 ```
 npm run build
-```
+````
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

@@ -1,8 +1,9 @@
 {
-    "img": "../assets/guillem-500.jpg",
+    "img": "img/guillem-500.jpg",
+    "jobTitle": "Full Stack Developer",
     "text" : [
-        "I am a Computer and Telecomunications engineer with a PhD in Economics, from Valencia (Spain). I used to do research on Game Theory and strategic behavior, theoretically and experimentally. Nowadays I work as a full-stack developer and DevOps.",
-        "I've always been into technology. During my academic and professional career programmed in C++, C, Java and PHP, but today I love Python and Django, and also (some) JavaScript. I work daily with GIT, I try to enforce best practices, the SOLID principles and do TDD.",
-        "On the DevOps side, I'm a Jenkins, Docker and Kubernetes enthusiast."
+        "I am a Computer and Telecomunications engineer with a PhD in Economics, from Valencia (Spain).",
+        "I used to do research on Game Theory and strategic behavior, theoretically and experimentally.",
+        "Nowadays I work full-time as a software developer."
     ]
 }

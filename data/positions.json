@@ -1,8 +1,16 @@
 [
     {
         "date": {
-            "from": "03/2018",
+            "from": "01/2020",
             "to": "now"
+        },
+        "title": "Full-stack developer at [United Nations International Computing Centre](https://www.unicc.org).",
+        "description": "Developing and deploying web applications (backend and frontend). Using agile methodologies, CI/CD, TDD. Python, Django, Kotlin, Spring boot, JS, React, PostgreSQL, Linux, AWS, Azure, atlassian suite."
+    },
+    {
+        "date": {
+            "from": "03/2018",
+            "to": "01/2020"
         },
         "title": "Full-stack developer & DevOps at [Sopra Steria](https://www.soprasteria.com).",
         "description": "In charge of small teams developing web and hybrid apps, microservices and CI/CD in the cloud using agile methodologies. Python, Django, Angular, Ionic, Docker, Kubernetes, Google Cloud, Jenkins."
@@ -12,7 +20,7 @@
             "from": "08/2017",
             "to": "02/2018"
         },
-        "title": "R&D Engineer and Full-stack developer at [Astellia](https://www.astellia.com/).",
+        "title": "R&D Engineer and Full-stack developer at [Astellia](https://www.astellia.com/) (now [EXFO](https://www.exfo.com)).",
         "description": "Development of a web application for the analysis and visualization of Mobile Networks data (Frontend: JS, Angular, Bootstrap. Backend: Java, Spring boot. Data: PostgreSQL. Tools: Git, GitLab runner, CentOS LINUX)."
     },
     {
