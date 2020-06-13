@@ -15,7 +15,7 @@ const mappings = [
     },
     {
         icon: "django",
-        exact: ["django rest"]
+        exact: ["django rest", "otree"]
     },
     {
         icon: "docker",
@@ -44,7 +44,24 @@ const mappings = [
     {
         icon: "confluence",
         has: ["atlassian"]
-    }
+    },
+    {
+        icon: "php",
+        exact: ["prestashop"]
+    },
+    {
+        icon: "java",
+        exact: ["kotlin"],  
+        has: ["spring"]
+    },
+    {
+        icon: "redhat",
+        has: ["centos"]
+    },
+    {
+        icon: "gitlab",
+        has: ["gitlab"]
+    },
 ]
 
 export default function DevIcon({ icon }) {

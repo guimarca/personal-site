@@ -1,5 +1,6 @@
-import positions from '../data/positions.json'
 import ReactMarkdown from 'react-markdown'
+import { LinksRow, TechItems } from '../utils/generic'
+import positions from '../data/positions.json'
 
 export default function Positions() {
   return (
@@ -23,8 +24,11 @@ export default function Positions() {
                 </figure>
                 <div className="media-content">
                   <div className="content">
-                    <span className="is-size-6 has-text-weight-bold"><ReactMarkdown source={ position.title }/></span>
+                    <h5 className="is-5 has-text-weight-bold"><ReactMarkdown source={ position.title }/></h5>
                     <span className="is-size-6"><ReactMarkdown source={ position.description }/></span>
+                    <div className="is-size-7 mt-3">
+                      <LinksRow items={ position.tech_stack } showItems={TechItems} separator=","/>
+                    </div>
                   </div>
                 </div>
               </article>
