@@ -9,7 +9,7 @@ config.autoAddCss = false
 import routes from '../utils/routes'
 
 import 'bulma/css/bulma.css'
-import 'devicon/devicon.css'
+// import 'devicon/devicon.css'  <-- from cdn in head
 
 function App({ Component, pageProps }) {
     const router = useRouter()
@@ -51,6 +51,8 @@ function App({ Component, pageProps }) {
                 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"/>
                 <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png"/>
                 <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"/>
+
+                <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"/>
             </Head>
 
             <section className="hero is-warning is-fullheight is-bold">
