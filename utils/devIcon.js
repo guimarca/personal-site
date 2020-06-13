@@ -1,33 +1,66 @@
 import devicons from 'devicon/devicon.json'
 
+const mappings = [
+    {
+        icon: "apple",
+        exact: ["ios"]
+    },
+    {
+        icon: "amazonwebservices",
+        exact: ["aws", "eks"]
+    },
+    {
+        icon: "python",
+        exact: ["celery"]
+    },
+    {
+        icon: "django",
+        exact: ["django rest"]
+    },
+    {
+        icon: "docker",
+        exact: ["docker swarm", "kubernetes"]
+    },
+    {
+        icon: "javascript",
+        exact: ["js", "ionic"]
+    },
+    {
+        icon: "angularjs",
+        exact: ["angular"]
+    },
+    {
+        icon: "yii",
+        exact: ["yii2"]
+    },
+    {
+        icon: "windows8",
+        exact: ["azure"]
+    },
+    {
+        icon: "google",
+        has: ["google"]
+    },
+    {
+        icon: "confluence",
+        has: ["atlassian"]
+    }
+]
+
 export default function DevIcon({ icon }) {
     const getIconID = (icon) => {
         const name = icon.trim().toLowerCase()
-        switch(name) {
-            case "ios":
-                return "apple"
-            case "aws":
-            case "eks":
-                return "amazonwebservices"
-            case "celery":
-            case "django rest":
-                return "python"
-            case "docker swarm":
-            case "kubernetes":
-                return "docker"
-            case "js":
-            case "ionic":
-                return "javascript"
-            case "angular":
-                return "angularjs"
-            case "yii2":
-                return "yii"
-            case "google cloud":
-                return "google"
 
-            default:
-                return name
+        for (const mapping of mappings) {
+            if (mapping.exact && mapping.exact.find(el => el === name)) {
+                return mapping.icon
+            }
+
+            if (mapping.has && mapping.has.find(el => name.includes(el))) {
+                return mapping.icon
+            }
         }
+        return name
     }
 
     const iconExists = (name) => {
