@@ -27,7 +27,7 @@ export default function Positions() {
                     <h5 className="is-5 has-text-weight-bold"><ReactMarkdown source={ position.title }/></h5>
                     <span className="is-size-6"><ReactMarkdown source={ position.description }/></span>
                     <div className="is-size-7 mt-3">
-                      <LinksRow items={ position.tech_stack } showItems={TechItems} separator=","/>
+                      <LinksRow items={ position.tech_stack } showItems={TechItems}/>
                     </div>
                   </div>
                 </div>

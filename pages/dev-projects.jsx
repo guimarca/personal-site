@@ -32,7 +32,7 @@ export default function DevProjects() {
                             { project.description }
                           </p>
 
-                          <LinksRow items={ project.tech_stack } showItems={TechItems}/>
+                          <LinksRow items={ project.tech_stack } showItems={TechItems} onlyIcons={true}/>
                           <LinksRow title="Links" items={ project.items } showItems={LinkItems}/>
 
                         </div>

@@ -5,7 +5,7 @@
             {
                 "title": "JAMBO App",
                 "description": "Contact management and chat app for UN employees.",
-                "tech_stack": ["Python", "Django", "Django REST", "celery", "PostgreSQL", "redis", "AWS", "Docker", "EKS", "nginx", "apache"],
+                "tech_stack": ["Python", "Django REST", "celery", "PostgreSQL", "redis", "AWS", "Docker", "EKS", "nginx", "apache", "bitbucket"],
                 "items": [
                     {
                         "title": "android",
@@ -20,7 +20,7 @@
             {
                 "title": "UN Digital Certificate of Entitlement",
                 "description": "App to help the process of handling retirees' pensions at UN. Uses Machine Learning algorithms and Blockchain technologies.",
-                "tech_stack": ["Python", "Django", "Django REST", "celery", "JS", "react", "PostgreSQL", "redis", "Linux", "Docker", "Docker swarm", "nginx", "apache"],
+                "tech_stack": ["Python", "Django REST", "celery", "JS", "react", "PostgreSQL", "redis", "Linux", "Docker", "Docker swarm", "nginx", "apache", "bitbucket"],
                 "items": [
                     {
                         "title": "android",
@@ -40,7 +40,7 @@
             {
                 "title": "Mercadona Activo2",
                 "description": "Interal app and webapp for company employees. Mainly at the backend/infra, with Django REST and Kubernetes in Google Cloud.",
-                "tech_stack": ["Python", "Django", "Django REST", "celery", "JS", "Angular", "ionic", "Sass", "PostgreSQL", "Docker", "Kubernetes", "Google Cloud", "Jenkins", "nginx"],
+                "tech_stack": ["Python", "Django REST", "celery", "JS", "Angular", "ionic", "Sass", "PostgreSQL", "Docker", "Kubernetes", "Google Cloud", "Jenkins", "nginx"],
                 "items": [
                     {
                         "title": "android",
@@ -67,7 +67,7 @@
                         "url": "http://ibsen-h2020.eu"
                     },
                     {
-                        "title": "recruitment system",
+                        "title": "recruitment website",
                         "url": "http://participants.ibsen-h2020.eu"
                     }
                 ]
@@ -82,15 +82,15 @@
                         "url": "http://lineex.es"
                     },
                     {
-                        "title": "participants portal",
+                        "title": "participants website",
                         "url": "http://participants.lineex.es"
                     },
                     {
-                        "title": "recruitment system",
+                        "title": "recruitment rebsite",
                         "url": "img/register.png"
                     },
                     {
-                        "title": "Wake On Lan",
+                        "title": "Wake On Lan webapp",
                         "url": "img/wol.png"
                     }
                 ]
@@ -122,7 +122,7 @@
                 "tech_stack": ["PHP", "MySQL", "PrestaShop"],
                 "items": [
                     {
-                        "title": "shop",
+                        "title": "online store website",
                         "url": "https://despensaserrana.com"
                     }
                 ]
