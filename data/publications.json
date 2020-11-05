@@ -1,0 +1,57 @@
+[
+    {
+        "title": "Integration and Diversity",
+        "authors": [
+            "S. Goyal",
+            "P. Hernández",
+            "F. Moisan",
+            "M. Muñoz-Herrera",
+            "A. Sánchez"
+        ],
+        "journal": "Experimental Economics",
+        "volume": "",
+        "pages": "",
+        "year": 2020,
+        "link": "https://link.springer.com/article/10.1007/s10683-020-09676-6"
+    },
+    {        
+        "title": "Equilibrium characterization of networks under conflicting preferences",
+        "authors": [
+            "P. Hernández", 
+            "M. Muñoz-Herrera",
+            "A. Sánchez"
+        ],
+        "journal": "Economics Letters",
+        "volume": 155,
+        "pages": "154-156",
+        "year": 2017,
+        "link": "http://www.sciencedirect.com/science/article/pii/S0165176516305031"
+    },
+    {        
+        "title": "Conflict and segregation in networks: An experiment on the interplay between individual preferences and social influence",
+        "authors": [
+            "L. Ellwardt",
+            "P. Hernández", 
+            "M. Muñoz-Herrera"
+        ],
+        "journal": "Journal of Dynamics and Games",
+        "volume": "3 issue 2",
+        "pages": "191-216",
+        "year": 2016,
+        "link": "https://aimsciences.org/journals/displayArticlesnew.jsp?paperID=12538"
+    },
+    {        
+        "title": "A formal model based on Game Theory for the analysis of cooperation in distributed service discovery",
+        "authors": [
+            "E. del Val",
+            "V. Botti",
+            "P. Hernández", 
+            "M. Rebollo"
+        ],
+        "journal": "Information Sciences",
+        "volume": "326",
+        "pages": "59 - 70",
+        "year": 2016,
+        "link": "https://aimsciences.org/journals/displayArticlesnew.jsp?paperID=12538"
+    }
+]

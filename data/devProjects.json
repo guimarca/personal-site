@@ -1,0 +1,133 @@
+{
+    "unicc": {
+        "title": "@ UNICC",
+        "projects": [
+            {
+                "title": "JAMBO App",
+                "description": "Contact management and chat app for UN employees.",
+                "tech_stack": ["Python", "Django REST", "celery", "PostgreSQL", "redis", "AWS", "Docker", "EKS", "nginx", "apache", "bitbucket"],
+                "items": [
+                    {
+                        "title": "android",
+                        "url": "https://play.google.com/store/apps/details?id=com.unicc.jambo"
+                    },
+                    {
+                        "title": "ios",
+                        "url": "https://apps.apple.com/us/app/jambo-app/id1509889941"
+                    }
+                ]
+            },
+            {
+                "title": "UN Digital Certificate of Entitlement",
+                "description": "App to help the process of handling retirees' pensions at UN. Uses Machine Learning algorithms and Blockchain technologies.",
+                "tech_stack": ["Python", "Django REST", "celery", "JS", "react", "PostgreSQL", "redis", "Linux", "Docker", "Docker swarm", "nginx", "apache", "bitbucket"],
+                "items": [
+                    {
+                        "title": "android",
+                        "url": "https://play.google.com/store/apps/details?id=com.unicc.certificateofentitlement"
+                    },
+                    {
+                        "title": "ios",
+                        "url": "https://apps.apple.com/tt/app/unjspf-digital-ce/id1492343775?ign-mpt=uo%3D2"
+                    }
+                ]
+            }
+        ]
+    },
+    "sopra": {
+        "title": "@ Sopra Steria",
+        "projects": [
+            {
+                "title": "Employees app",
+                "description": "Interal app and webapp for employees of a Spanish company leader in the retailing sector. Mainly at the backend/infra, with Django REST and Kubernetes in Google Cloud.",
+                "tech_stack": ["Python", "Django REST", "celery", "JS", "Angular", "ionic", "Sass", "PostgreSQL", "Docker", "Kubernetes", "Google Cloud", "Jenkins", "nginx"]
+            }
+        ]
+    },
+    "lineex": {
+        "title": "@ LINEEX",
+        "projects": [
+            {
+                "title": "IBSEN project web infrastructure",
+                "description": "Web infrastructure to support the research activity of the H2020 project.",
+                "tech_stack": ["PHP", "Yii2", "jQuery", "Bootstrap", "MySQL", "Python", "Django", "Linux"],
+                "items": [
+                    {
+                        "title": "website",
+                        "url": "http://ibsen-h2020.eu"
+                    },
+                    {
+                        "title": "recruitment website",
+                        "url": "http://participants.ibsen-h2020.eu"
+                    }
+                ]
+            },
+            {
+                "title": "LINEEX web infrastructure",
+                "description": "Web infrastructure to support the research activity of the Laboratory.",
+                "tech_stack": ["PHP", "Yii2", "jQuery", "Bootstrap", "MySQL", "Linux"],
+                "items": [
+                    {
+                        "title": "website",
+                        "url": "http://lineex.es"
+                    },
+                    {
+                        "title": "participants website",
+                        "url": "http://participants.lineex.es"
+                    },
+                    {
+                        "title": "recruitment rebsite",
+                        "url": "img/register.png"
+                    },
+                    {
+                        "title": "Wake On Lan webapp",
+                        "url": "img/wol.png"
+                    }
+                ]
+            },
+            {
+                "title": "Master in Economics, University of Valencia",
+                "description": "Website and students application system.",
+                "tech_stack": ["PHP", "Yii2", "jQuery", "Bootstrap"]
+            }
+        ]
+    },
+    "freelance": {
+        "title": "Freelance",
+        "projects": [            
+            {
+                "title": "GLOCREd",
+                "description": "The research network in 'Globalization, Growth and Inequality (19th-21st centuries)'. Website of the network, content management system (News, events, ...), personal profile manager.",
+                "tech_stack": ["PHP", "Yii2", "jQuery", "Bootstrap", "MySQL"],
+                "items": [
+                    {
+                        "title": "website",
+                        "url": "http://glocred.es"
+                    }
+                ]
+            },
+            {
+                "title": "Despensa Serrana",
+                "description": "Online store of meat, wines and artisan food.",
+                "tech_stack": ["PHP", "MySQL", "PrestaShop"],
+                "items": [
+                    {
+                        "title": "online store website",
+                        "url": "https://despensaserrana.com"
+                    }
+                ]
+            },
+            {
+                "title": "Integra-T experience",
+                "description": "Alternative trip agency.",
+                "tech_stack": ["PHP", "MySQL", "Drupal"],
+                "items": [
+                    {
+                        "title": "website",
+                        "url": "https://despensaserrana.com"
+                    }
+                ]
+            }
+        ]
+    }
+}

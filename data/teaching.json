@@ -1,0 +1,20 @@
+[
+  {
+    "period": {
+      "start": 2016,
+      "end": 17
+    },
+    "course": {
+      "name": "Introduction to Economics",
+      "link": "http://www.uv.es/fatwirepub/Satellite/universitat/ca/assignatures-1285848977179.html?idA=35807&idT=1313;2017"
+    },
+    "degree": {
+      "name": "Bachelor Degree in Business Administration",
+      "link": "http://www.uv.es/uvweb/economia/ca/estudis-grau/graus/oferta-graus/graus/grau-ade-administracio-direccio-empreses-1285848977179/Titulacio.html?id=1285847455548&plantilla=Economia/Page/TPGDetaill&p2=2"
+    },
+    "university": {
+      "name": "University of Valencia",
+      "link": "https://www.uv.es"
+    }
+  }
+]

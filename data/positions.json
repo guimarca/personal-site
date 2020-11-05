@@ -1,0 +1,56 @@
+[
+    {
+        "date": {
+            "from": "01/2020",
+            "to": "now"
+        },
+        "title": "Full-stack developer at [United Nations International Computing Centre](https://www.unicc.org).",
+        "description": "Developing and deploying web applications (backend and frontend). Using agile methodologies, CI/CD, TDD.",
+        "tech_stack": ["Python", "Django", "Kotlin", "Spring boot", "JS", "React", "PostgreSQL", "Linux", "redhat", "AWS", "Azure", "Atlassian suite"]
+    },
+    {
+        "date": {
+            "from": "03/2018",
+            "to": "01/2020"
+        },
+        "title": "Full-stack developer & DevOps at [Sopra Steria](https://www.soprasteria.com).",
+        "description": "In charge of small teams developing web and hybrid apps, microservices and CI/CD in the cloud using agile methodologies.",
+        "tech_stack": ["Python", "Django", "Django REST", "Angular", "ionic", "Docker", "Kubernetes", "Google Cloud", "Jenkins", "Github"]
+    },
+    {
+        "date": {
+            "from": "08/2017",
+            "to": "02/2018"
+        },
+        "title": "R&D Engineer and Full-stack developer at [Astellia](https://www.astellia.com/) (now [EXFO](https://www.exfo.com)).",
+        "description": "Development of a web application for the analysis and visualization of Mobile Networks data.",
+        "tech_stack": ["Java", "Spring boot", "JS", "Angular", "Bootstrap", "PostgreSQL", "Git", "GitLab runner", "CentOS LINUX"]
+    },
+    {
+        "date": {
+            "from": "09/2015",
+            "to": "07/2017"
+        },
+        "title": "Postdoctoral fellow at the [Socio-Economic Behavior Research Institute (ERI-CES)](http://erices.es), [Department of Economic Analysis](http://www.uv.es/anaeco), the [University of Valencia](http://www.uv.es).",
+        "description": "Funded by the [IBSEN project](http://ibsen-h2020.eu) ([Horizon H2020 programme of the European Commission](https://ec.europa.eu/programmes/horizon2020/)). I coordinated the development of the [recruitment platform software](http://participants.ibsen-h2020.eu), and participated in the development of the experimental software platform. I also worked on research projects in the areas of Networks and Experimental Economics.",
+        "tech_stack": ["PHP", "Yii2", "Python", "Django", "oTree", "jQuery", "Bootstrap", "Ubuntu Linux"]
+    },
+    {
+        "date": {
+            "from": "01/2015",
+            "to": "08/2015"
+        },
+        "title": "Postdoctoral researcher at the [IT Group - Artifical Intelligence](http://www.gti-ia.upv.es) of the [Department of Information Systems and Computing](http://www.dsic.upv.es) of the [Polytechnic University of Valencia](http://www.upv.es).",
+        "description": "I developed my research in the areas of Auctions y Crowdsourcing, from a theoretical point of view and doing simulations.",
+        "tech_stack": ["Python", "R"]
+    },
+    {
+        "date": {
+            "from": "09/2014",
+            "to": "12/2014"
+        },
+        "title": "Software developer and PhD student at the [Laboratory for Research in Experimental Economics (LINEEX)](http://www.lineex.es)",
+        "description": "As a software developer, I programmed experimental economics software and developed subjects recruitment software (PHP, MySQL, Python, Java, Android). I also was the Lab's sysadmin. During that period I was also a PhD student, obtaning a PhD in Industrial Economics in July 2014.",
+        "tech_stack": ["PHP", "MySQL", "jQuery", "Bootstrap", "Debian Linux"]
+    }
+]
