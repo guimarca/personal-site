@@ -14,10 +14,8 @@ cache:
 install:
   - npm install
 
-test:
-  - npm test
-
 script:
+  - npm test
   - npm run build:prod
 
 deploy:
