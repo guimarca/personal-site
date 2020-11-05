@@ -11,25 +11,21 @@ cache:
   directories:
     - node_modules
 
-jobs:
-  include:
-    - stage: install
-      script: npm install
+install:
+  - npm install
 
-    - stage: test
-      script: npm test
+test:
+  - npm test
 
-    - stage: build
-      script: npm run build:prod
+script:
+  - npm run build:prod
 
-    - stage: deploy
-      script: skip
-      deploy:
-        provider: pages
-        repo: guimarca/guimarca.github.io
-        skip_cleanup: true
-        github_token: $GITHUB_TOKEN
-        local_dir: out
-        target_branch: master
-        on:
-          branch: master
+deploy:
+  provider: pages
+  repo: guimarca/guimarca.github.io
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: out
+  target_branch: master
+  on:
+    branch: master
