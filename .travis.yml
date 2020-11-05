@@ -1,4 +1,6 @@
 language: node_js
+node_js:
+  - 12
 sudo: false
 
 branches:
@@ -9,18 +11,25 @@ cache:
   directories:
     - node_modules
 
-install:
-  - npm install
+jobs:
+  include:
+    - stage: install
+      script: npm install
 
-script:
-  - npm run build:prod
+    - stage: test
+      script: npm test
 
-deploy:
-  provider: pages
-  repo: guimarca/guimarca.github.io
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  local_dir: out
-  target_branch: master
-  on:
-    branch: master
+    - stage: build
+      script: npm run build:prod
+
+    - stage: deploy
+      script: skip
+      deploy:
+        provider: pages
+        repo: guimarca/guimarca.github.io
+        skip_cleanup: true
+        github_token: $GITHUB_TOKEN
+        local_dir: out
+        target_branch: master
+        on:
+          branch: master

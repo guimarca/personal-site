@@ -6,10 +6,10 @@ import teaching from '../data/teaching.json'
 import { ArticleSection } from '../utils/article'
 import { TeachingSection } from '../utils/teaching'
 
-export default function Research() {
+export default function AcademicWork() {
   return (
     <div className="">
-      <section className="section research-header">
+      <section className="section academic-work-header">
         <h1 className="title">
           academic work
         </h1>
