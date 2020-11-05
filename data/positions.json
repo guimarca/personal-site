@@ -4,9 +4,18 @@
             "from": "01/2020",
             "to": "now"
         },
+        "title": "Full-stack developer at [buguroo - Deep Learning for online fraud prevention](https://www.buguroo.com).",
+        "description": "Developing and deploying web applications, following SOLID principles and good practices.",
+        "tech_stack": ["Python", "Django", "Django REST", "PostgreSQL", "Linux", "AWS", "Docker", "Atlassian suite"]
+    },
+    {
+        "date": {
+            "from": "01/2020",
+            "to": "09/2020"
+        },
         "title": "Full-stack developer at [United Nations International Computing Centre](https://www.unicc.org).",
         "description": "Developing and deploying web applications (backend and frontend). Using agile methodologies, CI/CD, TDD.",
-        "tech_stack": ["Python", "Django", "Kotlin", "Spring boot", "JS", "React", "PostgreSQL", "Linux", "redhat", "AWS", "Azure", "Atlassian suite"]
+        "tech_stack": ["Python", "Django", "Django REST", "Kotlin", "Spring boot", "JS", "React", "PostgreSQL", "Linux", "redhat", "AWS", "Azure", "Atlassian suite"]
     },
     {
         "date": {
