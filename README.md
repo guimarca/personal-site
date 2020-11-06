@@ -23,3 +23,18 @@ npm run build
 ````
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Update dependencies
+
+Install (if you have not not already) 
+
+```
+npm install -g npm-check-updates
+```
+
+Then:
+
+```
+ncu -u
+npm update
+```
