@@ -8,6 +8,7 @@
     "build:prod": "NODE_ENV=production next build && next export",
     "start": "next start",
     "test": "jest --coverage",
+    "test:watch": "jest --watch",
     "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
   },
   "dependencies": {

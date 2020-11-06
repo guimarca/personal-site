@@ -1,58 +1,75 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFileAlt } from '@fortawesome/free-solid-svg-icons'
+import ReactDOMServer from "react-dom/server";
+
 
 export function Article({ article }) {
     const authors = () => {
-        if (article.authors.length === 0) {
-          return ''
-        }
-  
-        let authorsString = ', with '
-        if (article.authors.length === 1) {
-          authorsString += article.authors[0]
-        } else {
-          authorsString +=
-            article.authors.slice(0, -1).join(', ') +
-            ' and ' +
-            article.authors.slice(-1)
-        }
-        return authorsString
+      if (!article.authors || article.authors.length === 0) {
+        return
       }
+
+      let authorsString = ''
+      if (article.authors.length === 1) {
+        authorsString += article.authors[0]
+      } else {
+        authorsString +=
+          article.authors.slice(0, -1).join(', ') +
+          ' and ' +
+          article.authors.slice(-1)
+      }
+      return {
+        separator: ", with",
+        value: authorsString
+      }
+    }
 
     const journal = () => {
-        if (article.journal) {
-          return <>. <b>{ article.journal }</b></>
+      if (article.journal) {
+        return {
+          separator: ".",
+          value: <b>{ article.journal }</b>
         }
       }
+    }
 
     const volumeAndPages = () => {
-        if (article.volume && article.pages) {
-          return `. ${article.volume}, ${article.pages}`
+      if (article.volume && article.pages) {
+        return {
+          separator: ".", 
+          value: `${article.volume}, ${article.pages}`
         }
       }
+    }
 
     const year = () => {
-        if (article.year) {
-          return `. (${article.year})`
+      if (article.year) {
+        return {
+          separator: ".",
+          value: `(${article.year})`
         }
-        return ''
       }
+    }
 
     const link = () => {
-        if (article.link) {
-          return <a href={article.link}><FontAwesomeIcon icon={faFileAlt}/></a>
+      if (article.link) {
+        return {
+          separator: ".",
+          value: <a href={article.link}><FontAwesomeIcon icon={faFileAlt}/></a>
         }
-        return ''
       }
+    }
+    
+    const elements = [authors(), journal(), volumeAndPages(), year(), link()].filter(el => !!el)
 
     return (
         <div className="article">
-            <span className="article-title">"{ article.title }"</span>
-            { authors() }
-            <span className="article-journal">{ journal() }</span>
-            { volumeAndPages() } 
-            { year() }.&nbsp;
-            { link() }
+            <span>"{ article.title }"</span>
+            {
+              elements.map((element, idx) => {
+                return(<span key={idx}>{element.separator}&nbsp;{element.value}</span>)
+              })
+            }
         </div>
     )
 }
