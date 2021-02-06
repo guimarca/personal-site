@@ -4,16 +4,26 @@
             "from": "01/2020",
             "to": "now"
         },
-        "title": "Full-stack developer at [buguroo - Deep Learning for online fraud prevention](https://www.buguroo.com).",
+        "title": "Full-stack developer",
+        "site": {
+            "name": "buguroo - Deep Learning for online fraud prevention",
+            "link": "https://buguroo.com",
+            "img": "img/jobs/buguroo.jpg"
+        },
         "description": "Developing and deploying web applications, following SOLID principles and good practices.",
-        "tech_stack": ["Python", "Django", "Django REST", "PostgreSQL", "Linux", "AWS", "Docker", "Atlassian suite"]
+        "tech_stack": ["Python", "Django", "Django REST", "FastAPI", "asyncio", "PostgreSQL", "Elasticsearch", "Linux", "AWS", "Docker", "Atlassian suite"]
     },
     {
         "date": {
             "from": "01/2020",
             "to": "09/2020"
         },
-        "title": "Full-stack developer at [United Nations International Computing Centre](https://www.unicc.org).",
+        "title": "Full-stack developer",
+        "site": {
+            "name": "United Nations International Computing Centre",
+            "link": "https://www.unicc.org",
+            "img": "img/jobs/unicc.jpg"
+        },
         "description": "Developing and deploying web applications (backend and frontend). Using agile methodologies, CI/CD, TDD.",
         "tech_stack": ["Python", "Django", "Django REST", "Kotlin", "Spring boot", "JS", "React", "PostgreSQL", "Linux", "redhat", "AWS", "Azure", "Atlassian suite"]
     },
@@ -22,7 +32,12 @@
             "from": "03/2018",
             "to": "01/2020"
         },
-        "title": "Full-stack developer & DevOps at [Sopra Steria](https://www.soprasteria.com).",
+        "title": "Full-stack developer & DevOps",
+        "site": {
+            "name": "Sopra Steria",
+            "link": "https://www.soprasteria.com",
+            "img": "img/jobs/sopra-steria.png"
+        },
         "description": "In charge of small teams developing web and hybrid apps, microservices and CI/CD in the cloud using agile methodologies.",
         "tech_stack": ["Python", "Django", "Django REST", "Angular", "ionic", "Docker", "Kubernetes", "Google Cloud", "Jenkins", "Github"]
     },
@@ -31,7 +46,12 @@
             "from": "08/2017",
             "to": "02/2018"
         },
-        "title": "R&D Engineer and Full-stack developer at [Astellia](https://www.astellia.com/) (now [EXFO](https://www.exfo.com)).",
+        "title": "R&D Engineer and Full-stack developer",
+        "site": {
+            "name": "Astellia (now EXFO)",
+            "link": "https://www.exfo.com/en/astellia/",
+            "img": "img/jobs/exfo.png"
+        },
         "description": "Development of a web application for the analysis and visualization of Mobile Networks data.",
         "tech_stack": ["Java", "Spring boot", "JS", "Angular", "Bootstrap", "PostgreSQL", "Git", "GitLab runner", "CentOS LINUX"]
     },
@@ -40,7 +60,12 @@
             "from": "09/2015",
             "to": "07/2017"
         },
-        "title": "Postdoctoral fellow at the [Socio-Economic Behavior Research Institute (ERI-CES)](http://erices.es), [Department of Economic Analysis](http://www.uv.es/anaeco), the [University of Valencia](http://www.uv.es).",
+        "title": "Postdoctoral fellow",
+        "site": {
+            "name": "Socio-Economic Behavior Research Institute (ERI-CES), Department of Economic Analysis, the University of Valencia",
+            "link": "http://erices.es",
+            "img": "img/jobs/uv.gif"
+        },
         "description": "Funded by the [IBSEN project](http://ibsen-h2020.eu) ([Horizon H2020 programme of the European Commission](https://ec.europa.eu/programmes/horizon2020/)). I coordinated the development of the [recruitment platform software](http://participants.ibsen-h2020.eu), and participated in the development of the experimental software platform. I also worked on research projects in the areas of Networks and Experimental Economics.",
         "tech_stack": ["PHP", "Yii2", "Python", "Django", "oTree", "jQuery", "Bootstrap", "Ubuntu Linux"]
     },
@@ -49,7 +74,12 @@
             "from": "01/2015",
             "to": "08/2015"
         },
-        "title": "Postdoctoral researcher at the [IT Group - Artifical Intelligence](http://www.gti-ia.upv.es) of the [Department of Information Systems and Computing](http://www.dsic.upv.es) of the [Polytechnic University of Valencia](http://www.upv.es).",
+        "title": "Postdoctoral researcher",
+        "site": {
+            "name": "IT Group - Artifical Intelligence, Department of Information Systems and Computing, Polytechnic University of Valencia",
+            "link": "http://www.gti-ia.upv.es",
+            "img": "img/jobs/upv.jpg"
+        },
         "description": "I developed my research in the areas of Auctions y Crowdsourcing, from a theoretical point of view and doing simulations.",
         "tech_stack": ["Python", "R"]
     },
@@ -58,8 +88,13 @@
             "from": "09/2014",
             "to": "12/2014"
         },
-        "title": "Software developer and PhD student at the [Laboratory for Research in Experimental Economics (LINEEX)](http://www.lineex.es)",
+        "title": "Software developer and PhD student",
+        "site": {
+            "name": " Laboratory for Research in Experimental Economics (LINEEX), University of Valencia",
+            "link": "https://www.lineex.es",
+            "img": "img/jobs/lineex.png"
+        },
         "description": "As a software developer, I programmed experimental economics software and developed subjects recruitment software (PHP, MySQL, Python, Java, Android). I also was the Lab's sysadmin. During that period I was also a PhD student, obtaning a PhD in Industrial Economics in July 2014.",
-        "tech_stack": ["PHP", "MySQL", "jQuery", "Bootstrap", "Debian Linux"]
+        "tech_stack": ["PHP", "MySQL", "jQuery", "Bootstrap", "android", "Java", "Debian Linux"]
     }
 ]

@@ -17,16 +17,22 @@ export default function Positions() {
           return (
             <div className="box" key={index}>
               <article className="media">
-                <figure className="media-left has-text-right">
-                  { position.date.to }
-                  <br/>&uarr;<br/>
-                  { position.date.from }
+                <figure className="media-left has-text-center">
+                  <img src={ position.site.img } alt={ position.site.name } width="100"></img>
                 </figure>
+
                 <div className="media-content">
                   <div className="content">
-                    <h5 className="is-5 has-text-weight-bold"><ReactMarkdown source={ position.title }/></h5>
+                    <h5 className="is-5 has-text-weight-bold">{ position.title }</h5>
+                    <h6><a href={ position.site.link }>{ position.site.name }</a></h6>
+
+                    <div className="is-size-6 mb-3">
+                      { position.date.from } - { position.date.to }
+                    </div>
+                    
                     <span className="is-size-6"><ReactMarkdown source={ position.description }/></span>
-                    <div className="is-size-7 mt-3">
+                    
+                    <div className="is-size-7 mt-5">
                       <LinksRow items={ position.tech_stack } showItems={TechItems}/>
                     </div>
                   </div>
