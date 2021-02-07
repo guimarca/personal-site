@@ -11,7 +11,7 @@ const mappingsDevIcons = {
         },
         {
             icon: "python",
-            exact: ["celery", "asyncio", "FastAPI"]
+            exact: ["celery", "asyncio", "fastapi"]
         },
         {
             icon: "django",

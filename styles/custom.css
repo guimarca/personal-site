@@ -1,3 +1,7 @@
 .hero-body a {
     color: royalblue !important;
 }
+
+.hero-body a:hover, .hero-body a:active {
+    color: black !important;
+}
