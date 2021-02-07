@@ -5,7 +5,19 @@
             {
                 "title": "JAMBO App",
                 "description": "Contact management and chat app for UN employees.",
-                "techStack": ["Python", "Django REST", "celery", "PostgreSQL", "redis", "AWS", "Docker", "EKS", "nginx", "apache", "bitbucket"],
+                "techStack": [
+                    "Python",
+                    "Django REST",
+                    "celery",
+                    "PostgreSQL",
+                    "redis",
+                    "AWS",
+                    "Docker",
+                    "EKS",
+                    "nginx",
+                    "apache",
+                    "bitbucket"
+                ],
                 "items": [
                     {
                         "title": "android",
@@ -20,7 +32,21 @@
             {
                 "title": "UN Digital Certificate of Entitlement",
                 "description": "App to help the process of handling retirees' pensions at UN. Uses Machine Learning algorithms and Blockchain technologies.",
-                "techStack": ["Python", "Django REST", "celery", "JS", "react", "PostgreSQL", "redis", "Linux", "Docker", "Docker swarm", "nginx", "apache", "bitbucket"],
+                "techStack": [
+                    "Python",
+                    "Django REST",
+                    "celery",
+                    "JS",
+                    "react",
+                    "PostgreSQL",
+                    "redis",
+                    "Linux",
+                    "Docker",
+                    "Docker swarm",
+                    "nginx",
+                    "apache",
+                    "bitbucket"
+                ],
                 "items": [
                     {
                         "title": "android",
@@ -40,7 +66,21 @@
             {
                 "title": "Employees app",
                 "description": "Interal app and webapp for employees of a Spanish company leader in the retailing sector. Mainly at the backend/infra, with Django REST and Kubernetes in Google Cloud.",
-                "techStack": ["Python", "Django REST", "celery", "JS", "Angular", "ionic", "Sass", "PostgreSQL", "Docker", "Kubernetes", "Google Cloud", "Jenkins", "nginx"]
+                "techStack": [
+                    "Python",
+                    "Django REST",
+                    "celery",
+                    "JS",
+                    "Angular",
+                    "ionic",
+                    "Sass",
+                    "PostgreSQL",
+                    "Docker",
+                    "Kubernetes",
+                    "Google Cloud",
+                    "Jenkins",
+                    "nginx"
+                ]
             }
         ]
     },
@@ -50,7 +90,16 @@
             {
                 "title": "IBSEN project web infrastructure",
                 "description": "Web infrastructure to support the research activity of the H2020 project.",
-                "techStack": ["PHP", "Yii2", "jQuery", "Bootstrap", "MySQL", "Python", "Django", "Linux"],
+                "techStack": [
+                    "PHP",
+                    "Yii2",
+                    "jQuery",
+                    "Bootstrap",
+                    "MySQL",
+                    "Python",
+                    "Django",
+                    "Linux"
+                ],
                 "items": [
                     {
                         "title": "website",
@@ -65,7 +114,14 @@
             {
                 "title": "LINEEX web infrastructure",
                 "description": "Web infrastructure to support the research activity of the Laboratory.",
-                "techStack": ["PHP", "Yii2", "jQuery", "Bootstrap", "MySQL", "Linux"],
+                "techStack": [
+                    "PHP",
+                    "Yii2",
+                    "jQuery",
+                    "Bootstrap",
+                    "MySQL",
+                    "Linux"
+                ],
                 "items": [
                     {
                         "title": "website",
@@ -88,17 +144,28 @@
             {
                 "title": "Master in Economics, University of Valencia",
                 "description": "Website and students application system.",
-                "techStack": ["PHP", "Yii2", "jQuery", "Bootstrap"]
+                "techStack": [
+                    "PHP",
+                    "Yii2",
+                    "jQuery",
+                    "Bootstrap"
+                ]
             }
         ]
     },
     "freelance": {
         "title": "Freelance",
-        "projects": [            
+        "projects": [
             {
                 "title": "GLOCREd",
                 "description": "The research network in 'Globalization, Growth and Inequality (19th-21st centuries)'. Website of the network, content management system (News, events, ...), personal profile manager.",
-                "techStack": ["PHP", "Yii2", "jQuery", "Bootstrap", "MySQL"],
+                "techStack": [
+                    "PHP",
+                    "Yii2",
+                    "jQuery",
+                    "Bootstrap",
+                    "MySQL"
+                ],
                 "items": [
                     {
                         "title": "website",
@@ -109,7 +176,11 @@
             {
                 "title": "Despensa Serrana",
                 "description": "Online store of meat, wines and artisan food.",
-                "techStack": ["PHP", "MySQL", "PrestaShop"],
+                "techStack": [
+                    "PHP",
+                    "MySQL",
+                    "PrestaShop"
+                ],
                 "items": [
                     {
                         "title": "online store website",
@@ -120,11 +191,15 @@
             {
                 "title": "Integra-T experience",
                 "description": "Alternative trip agency.",
-                "techStack": ["PHP", "MySQL", "Drupal"],
+                "techStack": [
+                    "PHP",
+                    "MySQL",
+                    "Drupal"
+                ],
                 "items": [
                     {
                         "title": "website",
-                        "url": "https://despensaserrana.com"
+                        "url": "https://integratexperience.com"
                     }
                 ]
             }

@@ -11,7 +11,19 @@
             "img": "img/jobs/buguroo.jpg"
         },
         "description": "Developing and deploying web applications, following SOLID principles and good practices.",
-        "techStack": ["Python", "Django", "Django REST", "FastAPI", "asyncio", "PostgreSQL", "Elasticsearch", "Linux", "AWS", "Docker", "Atlassian suite"]
+        "techStack": [
+            "Python",
+            "Django",
+            "Django REST",
+            "FastAPI",
+            "asyncio",
+            "PostgreSQL",
+            "Elasticsearch",
+            "Linux",
+            "AWS",
+            "Docker",
+            "Atlassian suite"
+        ]
     },
     {
         "date": {
@@ -25,7 +37,21 @@
             "img": "img/jobs/unicc.jpg"
         },
         "description": "Developing and deploying web applications (backend and frontend). Using agile methodologies, CI/CD, TDD.",
-        "techStack": ["Python", "Django", "Django REST", "Kotlin", "Spring boot", "JS", "React", "PostgreSQL", "Linux", "redhat", "AWS", "Azure", "Atlassian suite"]
+        "techStack": [
+            "Python",
+            "Django",
+            "Django REST",
+            "Kotlin",
+            "Spring boot",
+            "JS",
+            "React",
+            "PostgreSQL",
+            "Linux",
+            "redhat",
+            "AWS",
+            "Azure",
+            "Atlassian suite"
+        ]
     },
     {
         "date": {
@@ -39,7 +65,18 @@
             "img": "img/jobs/sopra-steria.png"
         },
         "description": "In charge of small teams developing web and hybrid apps, microservices and CI/CD in the cloud using agile methodologies.",
-        "techStack": ["Python", "Django", "Django REST", "Angular", "ionic", "Docker", "Kubernetes", "Google Cloud", "Jenkins", "Github"]
+        "techStack": [
+            "Python",
+            "Django",
+            "Django REST",
+            "Angular",
+            "ionic",
+            "Docker",
+            "Kubernetes",
+            "Google Cloud",
+            "Jenkins",
+            "Github"
+        ]
     },
     {
         "date": {
@@ -53,7 +90,17 @@
             "img": "img/jobs/exfo.png"
         },
         "description": "Development of a web application for the analysis and visualization of Mobile Networks data.",
-        "techStack": ["Java", "Spring boot", "JS", "Angular", "Bootstrap", "PostgreSQL", "Git", "GitLab runner", "CentOS LINUX"]
+        "techStack": [
+            "Java",
+            "Spring boot",
+            "JS",
+            "Angular",
+            "Bootstrap",
+            "PostgreSQL",
+            "Git",
+            "GitLab runner",
+            "CentOS LINUX"
+        ]
     },
     {
         "date": {
@@ -67,7 +114,16 @@
             "img": "img/jobs/uv.gif"
         },
         "description": "Funded by the [IBSEN project](http://ibsen-h2020.eu) ([Horizon H2020 programme of the European Commission](https://ec.europa.eu/programmes/horizon2020/)). I coordinated the development of the [recruitment platform software](http://participants.ibsen-h2020.eu), and participated in the development of the experimental software platform. I also worked on research projects in the areas of Networks and Experimental Economics.",
-        "techStack": ["PHP", "Yii2", "Python", "Django", "oTree", "jQuery", "Bootstrap", "Ubuntu Linux"]
+        "techStack": [
+            "PHP",
+            "Yii2",
+            "Python",
+            "Django",
+            "oTree",
+            "jQuery",
+            "Bootstrap",
+            "Ubuntu Linux"
+        ]
     },
     {
         "date": {
@@ -81,7 +137,10 @@
             "img": "img/jobs/upv.jpg"
         },
         "description": "I developed my research in the areas of Auctions y Crowdsourcing, from a theoretical point of view and doing simulations.",
-        "techStack": ["Python", "R"]
+        "techStack": [
+            "Python",
+            "R"
+        ]
     },
     {
         "date": {
@@ -90,11 +149,19 @@
         },
         "title": "Software developer and PhD student",
         "site": {
-            "name": " Laboratory for Research in Experimental Economics (LINEEX), University of Valencia",
+            "name": "Laboratory for Research in Experimental Economics (LINEEX), University of Valencia",
             "link": "https://www.lineex.es",
             "img": "img/jobs/lineex.png"
         },
         "description": "As a software developer, I programmed experimental economics software and developed subjects recruitment software (PHP, MySQL, Python, Java, Android). I also was the Lab's sysadmin. During that period I was also a PhD student, obtaning a PhD in Industrial Economics in July 2014.",
-        "techStack": ["PHP", "MySQL", "jQuery", "Bootstrap", "android", "Java", "Debian Linux"]
+        "techStack": [
+            "PHP",
+            "MySQL",
+            "jQuery",
+            "Bootstrap",
+            "android",
+            "Java",
+            "Debian Linux"
+        ]
     }
 ]
