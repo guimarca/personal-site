@@ -11,6 +11,7 @@ import routes from '../utils/routes'
 import 'bulma/css/bulma.css'
 import '@creativebulma/bulma-tooltip/dist/bulma-tooltip.min.css'
 // import 'devicon/devicon.css'  <-- from cdn in head
+import '../styles/custom.css'
 
 function App({ Component, pageProps }) {
     const router = useRouter()
