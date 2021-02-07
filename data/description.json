@@ -1,9 +1,9 @@
 {
-    "img": "img/guillem-500.jpg",
-    "jobTitle": "Full Stack Developer",
-    "text" : [
-        "I am a Computer and Telecomunications engineer with a PhD in Economics, from Valencia (Spain).",
-        "I used to do research on Game Theory and strategic behavior, theoretically and experimentally.",
-        "Nowadays I work full-time as a software developer."
-    ]
+  "img": "img/guillem-500.jpg",
+  "jobTitle": "Full Stack Developer",
+  "text": [
+    "I am a Computer and Telecommunications engineer with a PhD in Economics, from Valencia (Spain).",
+    "I used to do research on Game Theory and strategic behavior, theoretically and experimentally.",
+    "Nowadays I work full-time as a software developer."
+  ]
 }
