@@ -25,7 +25,7 @@ export default function Education() {
                       <span className="is-size-6">
                       <a href={ certification.titulation.link }>{ certification.titulation.name }</a>
                       &nbsp;at&nbsp;
-                      <a href={ certification.university.link }>{ certification.university.name }</a>
+                      <a href={ certification.institution.link }>{ certification.institution.name }</a>
                       </span>
                     </p>
                   </div>

@@ -33,7 +33,7 @@ export default function Positions() {
                     <span className="is-size-6"><ReactMarkdown source={ position.description }/></span>
                     
                     <div className="is-size-7 mt-5">
-                      <LinksRow items={ position.tech_stack } showItems={TechItems}/>
+                      <LinksRow items={ position.techStack } showItems={TechItems}/>
                     </div>
                   </div>
                 </div>
