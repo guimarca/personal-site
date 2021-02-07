@@ -1,6 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFileAlt } from '@fortawesome/free-solid-svg-icons'
-
 export function TeachingSection({ data }) {
   return (
     data && data.length > 0 && <section className="section research-contents">
