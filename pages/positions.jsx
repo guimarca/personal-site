@@ -17,14 +17,19 @@ export default function Positions() {
           return (
             <div className="box" key={index}>
               <article className="media">
-                <figure className="media-left has-text-center">
+                <figure className="media-left has-text-center is-hidden-mobile">
                   <img src={ position.site.img } alt={ position.site.name } width="100"></img>
                 </figure>
 
                 <div className="media-content">
                   <div className="content">
                     <h5 className="is-5 has-text-weight-bold">{ position.title }</h5>
+                    
                     <h6><a href={ position.site.link }>{ position.site.name }</a></h6>
+
+                    <figure className="media-left has-text-center is-hidden-tablet">
+                      <img src={ position.site.img } alt={ position.site.name } width="100"></img>
+                    </figure>
 
                     <div className="is-size-6 mb-3">
                       { position.date.from } - { position.date.to }
