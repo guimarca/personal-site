@@ -18,7 +18,7 @@
           "apache",
           "bitbucket"
         ],
-        "items": [
+        "resources": [
           {
             "title": "android",
             "url": "https://play.google.com/store/apps/details?id=com.unicc.jambo"
@@ -47,7 +47,7 @@
           "apache",
           "bitbucket"
         ],
-        "items": [
+        "resources": [
           {
             "title": "android",
             "url": "https://play.google.com/store/apps/details?id=com.unicc.certificateofentitlement"
@@ -89,7 +89,7 @@
     "projects": [
       {
         "title": "IBSEN project infrastructure",
-        "description": "Web infrastructure to support the research activity of the H2020 project, including CMS, recruitment system, software for experiments and data anallysis.\n",
+        "description": "Web infrastructure to support the research activity of the H2020 project, including CMS, recruitment system, software for experiments and data analysis.\n",
         "techStack": [
           "PHP",
           "Yii2",
@@ -100,7 +100,7 @@
           "Django",
           "Linux"
         ],
-        "items": [
+        "resources": [
           {
             "title": "website",
             "url": "http://ibsen-h2020.eu"
@@ -122,7 +122,7 @@
           "MySQL",
           "Linux"
         ],
-        "items": [
+        "resources": [
           {
             "title": "website",
             "url": "https://lineex.es"
@@ -166,7 +166,7 @@
           "Bootstrap",
           "MySQL"
         ],
-        "items": [
+        "resources": [
           {
             "title": "website",
             "url": "https://glocred.es"
@@ -181,7 +181,7 @@
           "MySQL",
           "Prestashop"
         ],
-        "items": [
+        "resources": [
           {
             "title": "online store website",
             "url": "https://despensaserrana.com"
@@ -196,7 +196,7 @@
           "MySQL",
           "Drupal"
         ],
-        "items": [
+        "resources": [
           {
             "title": "website",
             "url": "https://integratexperience.com"

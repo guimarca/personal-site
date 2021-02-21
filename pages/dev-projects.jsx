@@ -33,7 +33,7 @@ export default function DevProjects() {
                           </p>
 
                           <LinksRow items={ project.techStack } showItems={TechItems} onlyIcons={true}/>
-                          <LinksRow title="Links" items={ project.items } showItems={LinkItems}/>
+                          <LinksRow title="Links" items={ project.resources } showItems={LinkItems}/>
 
                         </div>
                       </div>
