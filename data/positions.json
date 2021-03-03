@@ -7,7 +7,7 @@
       "link": "https://buguroo.com",
       "img": "img/jobs/buguroo.jpg"
     },
-    "description": "Design, development and deployment of web applications, following SOLID principles and good practices. Deploying microservices in the cloud.",
+    "description": "Design, development and deployment of web applications, following SOLID principles and good practices. Deploying microservices in the cloud. Microservice architecture development (with python and java), managing huge amounts of data (PostgreSQL and Elasticsearch).",
     "techStack": [
       "Python",
       "Django",
@@ -34,7 +34,7 @@
       "link": "https://www.unicc.org",
       "img": "img/jobs/unicc.jpg"
     },
-    "description": "Developing and deploying web applications (backend and frontend), using agile methodologies, CI/CD, TDD and containers. Architecting solutions using blockchain technologies.",
+    "description": "Development of web applications, backend and frontend. Using blockchain technologies (indy), connecting with Python/Django backends with React in the frontend.",
     "techStack": [
       "Python",
       "Django",
@@ -63,7 +63,7 @@
       "link": "https://www.soprasteria.com",
       "img": "img/jobs/sopra-steria.png"
     },
-    "description": "In charge of small teams developing web and hybrid apps, microservices and CI/CD in the cloud using agile methodologies.",
+    "description": "In charge of small teams developing web and hybrid apps, microservice-architecture backend applications and deployments in the cloud using good practices, CI/CD and agile methodologies.",
     "techStack": [
       "Python",
       "Django",
@@ -91,7 +91,7 @@
       "link": "https://www.exfo.com/en/astellia/",
       "img": "img/jobs/exfo.png"
     },
-    "description": "Development of a web application for the analysis and visualization of Mobile Networks data.",
+    "description": "Development of a web application for the analysis and visualization of Cellphone Networks data. Participated in the development of the backend, using Spring boot and PostgreSQL, and the frontend, using Angular 4+.",
     "techStack": [
       "Java",
       "Spring boot",
@@ -158,7 +158,7 @@
       "link": "https://www.lineex.es",
       "img": "img/jobs/lineex.png"
     },
-    "description": "As a software developer, I programmed experimental economics software and developed subjects recruitment software (PHP, MySQL, Python, Java, Android). I also was the Lab's sysadmin. During that period I was also a PhD student, obtaning a PhD. in Industrial Economics in July 2014.",
+    "description": "As a software developer, I programmed experimental economics software and developed subjects recruitment software (PHP, MySQL, Python, Java, Android). I also was the Lab's sysadmin. During that period I was also a PhD student, obtaining a PhD. in Industrial Economics in July 2014.",
     "techStack": [
       "PHP",
       "MySQL",
@@ -171,6 +171,26 @@
     "date": {
       "from": "09/2014",
       "to": "12/2014"
+    }
+  },
+  {
+    "title": "Internship",
+    "location": "Valencia (Spain)",
+    "site": {
+      "name": "Laboratory for Research in Experimental Economics (LINEEX), University of Valencia",
+      "link": "https://www.lineex.es",
+      "img": "img/jobs/lineex.png"
+    },
+    "description": "Development and running of software for social science experiments (zTree). Management and development of experimental subjects recruitment web applications (PHP+MySQL). Servers installation and maintenance (Linux).",
+    "techStack": [
+      "PHP",
+      "MySQL",
+      "zTree",
+      "Linux"
+    ],
+    "date": {
+      "from": "09/2009",
+      "to": "02/2010"
     }
   }
 ]
