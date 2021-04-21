@@ -3,9 +3,9 @@
     "title": "Full-stack developer",
     "location": "Madrid (Spain)",
     "site": {
-      "name": "buguroo - Deep Learning for online fraud prevention",
-      "link": "https://buguroo.com",
-      "img": "img/jobs/buguroo.jpg"
+      "name": "Revelock",
+      "link": "https://revelock.com",
+      "img": "img/jobs/revelock.png"
     },
     "description": "Design, development and deployment of web applications, following SOLID principles and good practices. Deploying microservices in the cloud. Microservice architecture development (with python and java), managing huge amounts of data (PostgreSQL and Elasticsearch).",
     "techStack": [
@@ -14,8 +14,11 @@
       "Django REST",
       "FastAPI",
       "asyncio",
+      "Java",
+      "Spring boot",
       "PostgreSQL",
       "Elasticsearch",
+      "Kafka",
       "Linux",
       "AWS",
       "Docker",
