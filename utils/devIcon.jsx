@@ -44,7 +44,7 @@ const mappingsDevIcons = {
         {
             icon: "java",
             exact: ["kotlin"],  
-            has: ["spring"]
+            has: ["spring", "quarkus"]
         },
         {
             icon: "redhat",
@@ -65,8 +65,23 @@ const mappingsDevIcons = {
         {
             icon: "firefox",
             has: ["web", "website", "webapp"]
-        }
+        },
+        {
+            icon: "apachekafka-original",
+            exact: ["kafka"]
+        },
+        {
+            icon: "redis",
+            has: ["redis"]
+        },
     ]
+}
+
+const getDevIconClassName = (iconId) => {
+    if (["apachekafka-original"].includes(iconId)) {
+        `devicon-${ iconId }`
+    }
+    return `devicon-${ iconId }-plain`
 }
 
 const mappingsFa = {
@@ -113,6 +128,6 @@ export default function DevIcon({ icon }) {
     return (
         (!library || !iconId) ? <></> :
         (library === "fa") ? <FontAwesomeIcon icon={ iconId } /> :
-        <i className={ `devicon-${ iconId }-plain` }></i>
+        <i className={ getDevIconClassName(iconId) }></i>
     )
 }
