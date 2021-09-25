@@ -1,4 +1,3 @@
-import ReactMarkdown from 'react-markdown'
 import { LinksRow, TechItems } from '../utils/generic'
 import positions from '../data/positions.json'
 
@@ -35,7 +34,7 @@ export default function Positions() {
                       { position.date.from } - { position.date.to }
                     </div>
                     
-                    <span className="is-size-6"><ReactMarkdown source={ position.description }/></span>
+                    <span className="is-size-6">{ position.description }</span>
                     
                     <div className="is-size-7 mt-5">
                       <LinksRow items={ position.techStack } showItems={TechItems}/>

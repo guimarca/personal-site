@@ -13,26 +13,24 @@
   },
   "dependencies": {
     "@creativebulma/bulma-tooltip": "^1.2.0",
-    "@fortawesome/fontawesome-svg-core": "^1.2.34",
-    "@fortawesome/free-brands-svg-icons": "^5.15.2",
-    "@fortawesome/free-solid-svg-icons": "^5.15.2",
-    "@fortawesome/react-fontawesome": "^0.1.14",
-    "bulma": "^0.9.2",
-    "devicon": "^2.10.1",
-    "next": "11.1.1",
-    "npm": "^7.6.0",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "react-markdown": "^5.0.3"
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.15",
+    "bulma": "^0.9.3",
+    "devicon": "^2.14.0",
+    "next": "11.1.2",
+    "npm": "^7.24.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "@testing-library/dom": "^7.29.6",
-    "@testing-library/jest-dom": "^5.11.9",
-    "@testing-library/react": "^11.2.5",
-    "babel-jest": "^26.6.3",
-    "coveralls": "^3.1.0",
+    "@testing-library/dom": "^8.6.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.1.0",
+    "babel-jest": "^27.2.2",
+    "coveralls": "^3.1.1",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^26.6.3",
-    "jest-dom": "^4.0.0"
+    "jest": "^27.2.2"
   }
 }

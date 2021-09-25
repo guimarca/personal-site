@@ -1,5 +1,4 @@
 import education from '../data/education.json'
-import ReactMarkdown from 'react-markdown'
 
 export default function Education() {
   return (
