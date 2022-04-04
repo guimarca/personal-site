@@ -4,11 +4,9 @@ import positions from '../data/positions.json'
 export default function Positions() {
   return (
     <div className="">
-      <section className="section positions-header">
-        <h1 className="title">
-          positions
-        </h1>
-      </section>
+      <h1 className="uk-heading-medium">
+        positions
+      </h1>
 
       <section className="section positions-contents">
       {
