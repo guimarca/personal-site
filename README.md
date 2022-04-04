@@ -1,6 +1,6 @@
 # personal-site
 
-![master](https://github.com/github/guimarca/personal-site/actions/workflows/main.yml/badge.svg)
+![master](https://github.com/guimarca/personal-site/actions/workflows/main.yml/badge.svg)
 
 https://guimarca.github.io
 
