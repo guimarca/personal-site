@@ -31,3 +31,4 @@ jobs:
           repository-name: guimarca/guimarca.github.io
           branch: master
           folder: out
+          ssh-key: ${{ secrets.DEPLOY_KEY }}
