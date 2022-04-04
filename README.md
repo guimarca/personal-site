@@ -1,6 +1,6 @@
 # personal-site
 
-[![Build Status](https://travis-ci.org/guimarca/personal-site.svg?branch=master)](https://travis-ci.org/guimarca/personal-site) [![Coverage Status](https://coveralls.io/repos/github/guimarca/personal-site/badge.svg?branch=master)](https://coveralls.io/github/guimarca/personal-site?branch=master)
+[![Build Status](https://app.travis-ci.com/guimarca/personal-site.svg?branch=master)](https://app.travis-ci.com/guimarca/personal-site)) [![Coverage Status](https://coveralls.io/repos/github/guimarca/personal-site/badge.svg?branch=master)](https://coveralls.io/github/guimarca/personal-site?branch=master)
 
 https://guimarca.github.io
 
