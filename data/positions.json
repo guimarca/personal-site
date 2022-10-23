@@ -1,11 +1,34 @@
 [
   {
     "title": "Full-stack developer",
+    "location": "London (United Kingdom)",
+    "site": {
+      "name": "Cytora",
+      "link": "https://cytora.com",
+      "img": "img/jobs/cytora.jpg"
+    },
+    "description": "Backend developer of a highly configurable application for the insurances sector that extracts and analyzes  data from multiple documents and formats.",
+    "techStack": [
+      "Python",
+      "Flask",
+      "PostgreSQL",
+      "Linux",
+      "AWS",
+      "Docker",
+      "Github"
+    ],
+    "date": {
+      "from": "08/2022",
+      "to": "now"
+    }
+  },
+  {
+    "title": "Full-stack developer",
     "location": "Madrid (Spain)",
     "site": {
-      "name": "Revelock a Feedzai Company",
-      "link": "https://revelock.com",
-      "img": "img/jobs/rk_feedzai.jpg"
+      "name": "Feedzai",
+      "link": "https://feedzai.com",
+      "img": "img/jobs/feedzai.jpeg"
     },
     "description": "Design, development and deployment of web applications, following SOLID principles and good practices. Microservice architecture development (with python and java), managing huge amounts of data (PostgreSQL and Elasticsearch). Event driven applications development with Kafka. Deploying microservices in the cloud.",
     "techStack": [
@@ -28,7 +51,7 @@
     ],
     "date": {
       "from": "10/2020",
-      "to": "now"
+      "to": "07/2022"
     }
   },
   {
