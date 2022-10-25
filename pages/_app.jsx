@@ -41,63 +41,65 @@ function App({ Component, pageProps }) {
         }
     }
 
-    return (
-        <>
-            <Head>
-                <title>Guillem Martínez-Cànovas</title>
+    return <>
+        <Head>
+            <title>Guillem Martínez-Cànovas</title>
 
-                <meta name="description" content="Fullstack developer and DevOps. Computer and Telecomunications engineer with a PhD in Economics."/>
-                <meta name="keywords" content="programming, developer, fullstack developer, devops, python, django, javascript, js, react, reactjs, kubernetes, jenkins, computer science, economics, experimental economics, behavioral economics"/>
-                <meta name="viewport" content="width=device-width, initial-scale=1"/>s
-                
-                <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"/>
-                <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png"/>
-                <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"/>
+            <meta name="description" content="Fullstack developer and DevOps. Computer and Telecomunications engineer with a PhD in Economics."/>
+            <meta name="keywords" content="programming, developer, fullstack developer, devops, python, django, javascript, js, react, reactjs, kubernetes, jenkins, computer science, economics, experimental economics, behavioral economics"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>s
+            
+            <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"/>
+            <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png"/>
+            <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"/>
 
-                <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"/>
-            </Head>
+            <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"/>
+        </Head>
 
-            <section className="hero is-warning is-fullheight is-bold">
+        <section className="hero is-warning is-fullheight is-bold">
 
-                <div className="hero-head">
-                    <nav className="navbar">
-                    <div className="container">
-                        <div className="navbar-brand">
-                            <span className="navbar-burger burger" data-target="navbarMenuHeroA" onClick={ () => handleHamburgerClick() }>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </span>
-                        </div>
-                        <div id="navbarMenuHeroA" className="navbar-menu">
-                        <div className="navbar-end">
-                            {
-                                routes.map((route, index) => {
-                                    let linkClass = "navbar-item"
-                                    if  (router.pathname === route.path) {
-                                        linkClass = linkClass + " is-active"
-                                    }
-                                    return (
-                                        <Link href={route.path} key={index}>
-                                            <a className={linkClass} onClick={ () => handleHamburgerClick(true) } >{route.title}</a>
-                                        </Link>
-                                    )
-                                })
-                            }
-                        </div>
-                        </div>
+            <div className="hero-head">
+                <nav className="navbar">
+                <div className="container">
+                    <div className="navbar-brand">
+                        <span className="navbar-burger burger" data-target="navbarMenuHeroA" onClick={ () => handleHamburgerClick() }>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
                     </div>
-                    </nav>
-                </div>
-                
-                <div className="hero-body">
-                    <div className="container">
-                        <Component {...pageProps} />
+                    <div id="navbarMenuHeroA" className="navbar-menu">
+                    <div className="navbar-end">
+                        {
+                            routes.map((route, index) => {
+                                let linkClass = "navbar-item"
+                                if  (router.pathname === route.path) {
+                                    linkClass = linkClass + " is-active"
+                                }
+                                return (
+                                    <Link
+                                        href={route.path}
+                                        key={index}
+                                        className={linkClass}
+                                        onClick={ () => handleHamburgerClick(true) }>
+                                        {route.title}
+                                    </Link>
+                                );
+                            })
+                        }
+                    </div>
                     </div>
                 </div>
-            </section>
-        </>   
-    )
+                </nav>
+            </div>
+            
+            <div className="hero-body">
+                <div className="container">
+                    <Component {...pageProps} />
+                </div>
+            </div>
+        </section>
+    </>;
 }
 
 export default App
