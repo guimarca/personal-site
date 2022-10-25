@@ -17,7 +17,7 @@ jobs:
           node-version: '16'
 
       - name: Install dependencies ⬇️
-        run: npm install
+        run: npm install --force
         
       - name: Test 🧪
         run: npm test
