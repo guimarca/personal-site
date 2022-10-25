@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFileAlt } from '@fortawesome/free-solid-svg-icons'
-import ReactDOMServer from "react-dom/server";
 
 
 export function Article({ article }) {
