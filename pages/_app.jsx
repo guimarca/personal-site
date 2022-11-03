@@ -4,47 +4,37 @@ import { useRouter } from 'next/router'
 
 import { config } from '@fortawesome/fontawesome-svg-core'
 import * as styles from '@fortawesome/fontawesome-svg-core/styles.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+
+
 config.autoAddCss = false
 
 import routes from '../utils/routes'
 
-import 'bulma/css/bulma.css'
-import '@creativebulma/bulma-tooltip/dist/bulma-tooltip.min.css'
-// import 'devicon/devicon.css'  <-- from cdn in head
+import '../node_modules/uikit/dist/js/uikit.min.js'; 
+import '../node_modules/uikit/dist/css/uikit.min.css'
 import '../styles/custom.css'
 
 function App({ Component, pageProps }) {
     const router = useRouter()
 
-    const handleHamburgerClick = (forceHide=false) => {
-        if (!process.browser) {
-            return
-        }
-        // Get all "navbar-burger" elements
-        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-          
-        // Check if there are any navbar burgers
-        if ($navbarBurgers.length > 0) {
-            $navbarBurgers.forEach( el => {
-            const target = el.dataset.target;
-            const $target = document.getElementById(target);
-      
-            if (forceHide) {
-                el.classList.remove('is-active');
-                $target.classList.remove('is-active');
-            }
-            else {
-                el.classList.toggle('is-active');
-                $target.classList.toggle('is-active');
-            }
-          })
-        }
+    const createNavbarItem = (route, index) => {
+        let liClass = router.pathname === route.path ? "uk-active" : "";
+        return (
+            <li className={liClass}>
+                <Link
+                    href={route.path}
+                    key={index}>
+                        {route.title}
+                </Link>
+            </li>
+        );
     }
 
     return <>
         <Head>
             <title>Guillem Martínez-Cànovas</title>
-
             <meta name="description" content="Fullstack developer and DevOps. Computer and Telecomunications engineer with a PhD in Economics."/>
             <meta name="keywords" content="programming, developer, fullstack developer, devops, python, django, javascript, js, react, reactjs, kubernetes, jenkins, computer science, economics, experimental economics, behavioral economics"/>
             <meta name="viewport" content="width=device-width, initial-scale=1"/>s
@@ -56,50 +46,41 @@ function App({ Component, pageProps }) {
             <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"/>
         </Head>
 
-        <section className="hero is-warning is-fullheight is-bold">
 
-            <div className="hero-head">
-                <nav className="navbar">
-                <div className="container">
-                    <div className="navbar-brand">
-                        <span className="navbar-burger burger" data-target="navbarMenuHeroA" onClick={ () => handleHamburgerClick() }>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </span>
+        <div uk-sticky="offset: 0;" class="uk-margin">
+            <div class="uk-visible@m">
+                <nav class="uk-navbar-container" data-uk-navbar>
+                    <div class="uk-navbar-center">
+                        <div class="uk-navbar-center-left">
+                            <ul class="uk-navbar-nav">{ routes.slice(0, 3).map(createNavbarItem) }</ul>
+                        </div>
+                        <a class="uk-navbar-item uk-logo" href="#">G M C</a>
+                        <div class="uk-navbar-center-right">
+                            <ul class="uk-navbar-nav">{ routes.slice(3, 6).map(createNavbarItem) }</ul>
+                        </div>
                     </div>
-                    <div id="navbarMenuHeroA" className="navbar-menu">
-                    <div className="navbar-end">
-                        {
-                            routes.map((route, index) => {
-                                let linkClass = "navbar-item"
-                                if  (router.pathname === route.path) {
-                                    linkClass = linkClass + " is-active"
-                                }
-                                return (
-                                    <Link
-                                        href={route.path}
-                                        key={index}
-                                        className={linkClass}
-                                        onClick={ () => handleHamburgerClick(true) }>
-                                        {route.title}
-                                    </Link>
-                                );
-                            })
-                        }
-                    </div>
-                    </div>
-                </div>
                 </nav>
             </div>
-            
-            <div className="hero-body">
-                <div className="container">
-                    <Component {...pageProps} />
-                </div>
+
+            <div class="uk-hidden@s">
+                <nav class="uk-navbar uk-navbar-container uk-margin" data-uk-navbar>
+                    <div class="uk-navbar-left navbar-btn">
+                        <a class="uk-navbar-toggle uk-navbar-toggle-animate" uk-navbar-toggle-icon href="#"><FontAwesomeIcon icon={faBars} /></a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                { routes.map(createNavbarItem) }
+                            </ul>
+                        </div>
+                        <a class="uk-navbar-item uk-logo" href="#">G M C</a>
+                    </div>
+                </nav>
             </div>
-        </section>
-    </>;
+        </div>
+            
+        <div className="uk-container content">
+            <Component {...pageProps} />
+        </div>
+    </>
 }
 
 export default App

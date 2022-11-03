@@ -1,11 +1,25 @@
 html {
-    background-color: #ffb657;
+    background-color: #242322;
+    color: lightgray;
 }
 
-.hero-body a {
-    color: royalblue !important;
+.navbar-btn {
+    padding-left: 10px;
 }
 
-.hero-body a:hover, .hero-body a:active {
-    color: black !important;
+.content h1, .content h2 {
+    color: lightgray;
+}
+
+.home {
+    text-align: center;
+}
+
+.home .sn-icon {
+    padding-top: 30px;
+    font-size: 36pt;
+}
+
+.home .home-img {
+    width: 25%;
 }

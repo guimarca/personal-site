@@ -9,9 +9,9 @@ export function LinksRow({ title, items, showItems, size, separator, onlyIcons }
     }
     return (
         items && items.length > 0 ?
-        <div className={`is-mobile mb-${mb}`}>
-            <div className={ `is-size-${isSize}` }>
-            { title && <span className="mr-3"><strong>{ title }</strong></span> }
+        <div>
+            <div>
+            { title && <span className="uk-margin-small-right"><strong>{ title }</strong></span> }
             { showItems(items, separator, onlyIcons) }                          
             </div>
         </div>
@@ -21,7 +21,7 @@ export function LinksRow({ title, items, showItems, size, separator, onlyIcons }
 
 export const LinkItems = (items) => {
     return items.map((item, index) => 
-        <span className="mr-3" key={index}>
+        <span className="uk-margin-small-right" key={index}>
         {
             item.url ?
             <a href={ item.url }>
@@ -35,10 +35,10 @@ export const LinkItems = (items) => {
 
 export const TechItems = (items, separator, onlyIcons) => {
     return items.map((item, index) => 
-      <span className="mr-2" key={index} style={{ display: "inline-block" }}>
+      <span className="uk-margin-small-right" key={index} style={{ display: "inline-block" }}>
         {
             onlyIcons ? 
-            <span data-tooltip={ item } className="mr-3"><DevIcon icon={ item }/></span>
+            <span data-tooltip={ item } className="uk-margin-small-right"><DevIcon icon={ item }/></span>
             : <><DevIcon icon={ item }/> { item }</>
         }
         { index < items.length - 1 ? separator : "" }
