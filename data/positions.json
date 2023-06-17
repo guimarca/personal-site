@@ -1,13 +1,13 @@
 [
   {
     "title": "Full-stack developer",
-    "location": "London (United Kingdom)",
+    "location": "London (United Kingdom) - Remote",
     "site": {
       "name": "Cytora",
       "link": "https://cytora.com",
       "img": "img/jobs/cytora.jpg"
     },
-    "description": "Backend developer of a highly configurable application for the insurances sector that extracts and analyzes  data from multiple documents and formats.",
+    "description": "Backend developer of a highly configurable application for the insurances sector that extracts and analyzes  data from multiple documents and formats. Strong use of AI tools such as Large Language Models and  fine-tuned document recognition models. Serving results via REST APIs. Event driven architecture.",
     "techStack": [
       "Python",
       "Flask",
@@ -15,7 +15,11 @@
       "Linux",
       "AWS",
       "Docker",
-      "Github"
+      "Github",
+      "OpenAI GPT",
+      "Google Cloud",
+      "Google DocumentAI",
+      "Weaviate"
     ],
     "date": {
       "from": "08/2022",
@@ -24,7 +28,7 @@
   },
   {
     "title": "Full-stack developer",
-    "location": "Madrid (Spain)",
+    "location": "Madrid (Spain) - Remote",
     "site": {
       "name": "Feedzai",
       "link": "https://feedzai.com",
