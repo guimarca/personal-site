@@ -1,52 +1,48 @@
 # personal-site
 
-![master](https://github.com/guimarca/personal-site/actions/workflows/main.yml/badge.svg)
-
 https://guimarca.github.io
 
 > Guillem Martinez-Canovas
 
 ## Getting Started
 
-First, run the development server:
+Install pnpm:
+
+```bash
+npm i -g pnpm
+```
+
+Run dev server:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-To build for production:
+Open [http://localhost:4321](http://localhost:4321) in your browser.
 
-```
+```bash
 npm run build
-````
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```
 
 ## Tests
 
-```
-npm test
-```
-
-To upload report to coveralls (.coveralls.yml with `repo_token: TOKEN` might be needed):
-
-```
-npm run coveralls
+```bash
+npm run test:e2e
 ```
 
 ## Update dependencies
 
-Install (if you have not not already) 
+Install (if you have not not already)
 
-```
-npm install -g npm-check-updates
+```bash
+npm i -g npm-check-updates
 ```
 
 Then:
 
-```
+```bash
 ncu -u
 npm update
 ```
+
+Built with [Astrofy](https://github.com/manuelernestog/astrofy)

@@ -1,0 +1,58 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+import Publication from "@components/Publication.astro";
+import TeachingSubject from "@components/TeachingSubject.astro";
+import Conference from "@components/Conference.astro";
+
+import publications from "../../data/publications.json";
+import otherPublications from "../../data/otherPublications.json";
+import teaching from "../../data/teaching.json";
+import journalRefereeing from "../../data/journalRefereeing.json";
+import conferences from "../../data/conferences.json";
+---
+
+<BaseLayout title="Academic Work" sideBarActiveItemID="academic-work">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">Academic Work</div>
+  </div>
+
+  <div class="text-2xl w-full font-bold mb-5 mt-5">Publications</div>
+  <div>
+    {
+      publications.map((publication) => (
+        <Publication publication={publication} />
+      ))
+    }
+    <div class="divider my-0"></div>
+  </div>
+
+  <div class="text-2xl w-full font-bold mb-5 mt-5">Other Publications</div>
+  <div>
+    {
+      otherPublications.map((publication) => (
+        <Publication publication={publication} />
+      ))
+    }
+    <div class="divider my-0"></div>
+  </div>
+
+  <div class="text-2xl w-full font-bold mb-5 mt-5">Teaching</div>
+  <div>
+    {teaching.map((subject) => <TeachingSubject subject={subject} />)}
+    <div class="divider my-0"></div>
+  </div>
+
+  <div class="text-2xl w-full font-bold mb-5 mt-5">Conferences</div>
+  <div>
+    {conferences.map((conference) => <Conference conference={conference} />)}
+    <div class="divider my-0"></div>
+  </div>
+
+  <div class="text-2xl w-full font-bold mb-5 mt-5">Journal Refereeing</div>
+  <div>
+    <ul>
+      {journalRefereeing.map((journal) => <li>&rarr; {journal}</li>)}
+    </ul>
+  </div>
+</BaseLayout>

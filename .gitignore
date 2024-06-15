@@ -8,12 +8,10 @@
 # testing
 /coverage
 
-# next.js
-/.next/
-/out/
-
 # production
 /build
+dist
+/dist
 
 # misc
 .DS_Store
@@ -28,3 +26,9 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+
+# Astro
+.astro/
+
+# cypress
+./cyress/screenshots/**

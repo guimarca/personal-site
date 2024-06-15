@@ -1,0 +1,20 @@
+---
+import type { TeachingSubject } from "src/models";
+
+interface Props {
+  subject: TeachingSubject;
+}
+
+const { subject } = Astro.props;
+---
+
+<div class="mb-5">
+  <span class="mr-3"
+    ><strong>{subject.period.from} - {subject.period.to}</strong></span
+  >
+
+  <a href={subject.course.link} target="_blank">{subject.course.name}</a>,
+  <a href={subject.degree.link} target="_blank">{subject.degree.name}</a>,
+  <a href={subject.university.link} target="_blank">{subject.university.name}</a
+  >
+</div>
