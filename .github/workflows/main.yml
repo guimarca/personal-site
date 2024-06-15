@@ -32,5 +32,5 @@ jobs:
         with:
           repository-name: guimarca/guimarca.github.io
           branch: master
-          folder: dest
+          folder: dist
           ssh-key: ${{ secrets.DEPLOY_KEY }}
