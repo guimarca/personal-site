@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
 
   workflow_dispatch:
 
@@ -14,21 +14,21 @@ jobs:
       - name: Checkout ✔
         uses: actions/checkout@v3
         with:
-          node-version: '16'
+          node-version: "18"
 
       - name: Install dependencies ⬇️
-        run: npm install --force
-        
-      - name: Test 🧪
-        run: npm test
-        
+        run: pnpm install
+
       - name: Build 🛠
-        run: npm run build:prod
-        
+        run: npm run build
+
+      - name: Test 🧪
+        run: npm run test:e2e
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           repository-name: guimarca/guimarca.github.io
           branch: master
-          folder: out
+          folder: dest
           ssh-key: ${{ secrets.DEPLOY_KEY }}

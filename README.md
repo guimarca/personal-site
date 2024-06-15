@@ -1,7 +1,5 @@
 # personal-site
 
-![master](https://github.com/guimarca/personal-site/actions/workflows/main.yml/badge.svg)
-
 https://guimarca.github.io
 
 > Guillem Martinez-Canovas
@@ -29,13 +27,7 @@ npm run build
 ## Tests
 
 ```bash
-npm test
-```
-
-To upload report to coveralls (.coveralls.yml with `repo_token: TOKEN` might be needed):
-
-```bash
-npm run coveralls
+npm run test:e2e
 ```
 
 ## Update dependencies

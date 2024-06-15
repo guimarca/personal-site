@@ -10,6 +10,8 @@
 
 # production
 /build
+dist
+/dist
 
 # misc
 .DS_Store
@@ -27,3 +29,6 @@ yarn-error.log*
 
 # Astro
 .astro/
+
+# cypress
+./cyress/screenshots/**
