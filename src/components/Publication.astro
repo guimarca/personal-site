@@ -1,0 +1,21 @@
+---
+import type { Publication } from "src/models";
+
+interface Props {
+  publication: Publication;
+}
+
+const { publication } = Astro.props;
+---
+
+<div class="mb-5">
+  "{publication.title}", with {publication.authors.join(", ")}. <strong
+    >{publication.journal}</strong
+  >. {
+    publication.volume &&
+      publication.pages &&
+      `${publication.volume}, ${publication.pages}.`
+  }({publication.year}). <a href={publication.link}
+    ><i class="fa-solid fa-file-arrow-down"></i></a
+  >
+</div>

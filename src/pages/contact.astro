@@ -1,0 +1,46 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import contact from "../../data/contact.json";
+---
+
+<BaseLayout title="Contact" sideBarActiveItemID="contact">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">Contact</div>
+  </div>
+
+  <div class="py-2">
+    <text class="text-lg">
+      You can contact me via email or any of the links you'll find below. I'll
+      try to get back to you ASAP!
+    </text>
+  </div>
+
+  <div class="text-center mt-10">
+    <i class="fa fa-envelope"></i>
+    <span class="text-lg font-bold" set:html={contact.email} />
+  </div>
+
+  <div class="p-10 text-center">
+    <div class="text-5xl">
+      <a
+        href={contact.profiles.stackoverflow.link}
+        target="_blank"
+        class="p-3"
+        aria-label={contact.profiles.stackoverflow.name}
+        title={contact.profiles.stackoverflow.name}
+      >
+        <i class="fa-brands fa-stack-overflow"></i></a
+      >
+
+      <a
+        href={contact.profiles.linkedin.link}
+        target="_blank"
+        class="p-3"
+        aria-label={contact.profiles.linkedin.name}
+        title={contact.profiles.linkedin.name}
+      >
+        <i class="fa-brands fa-linkedin"></i></a
+      >
+    </div>
+  </div>
+</BaseLayout>

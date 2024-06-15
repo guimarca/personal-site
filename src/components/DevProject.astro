@@ -1,0 +1,35 @@
+---
+import { getIconText } from "src/lib/icons";
+import type { DevProject } from "src/models";
+
+interface Props {
+  devProject: DevProject;
+}
+
+const { devProject } = Astro.props;
+---
+
+<div
+  class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]"
+>
+  <div class="hero-content flex-col md:flex-row">
+    <div class="grow w-full">
+      <h1 class="text-lg font-bold">
+        {devProject.title}
+      </h1>
+      <p class="py-1 text-1xl">{devProject.description}</p>
+      <div class="card-actions justify-end">
+        {
+          devProject.resources &&
+            devProject.resources.map((resource) => (
+              <span class="inline-flex items-center rounded-md bg-pink-50 px-2 py-1 text-xs font-medium text-pink-700 ring-1 ring-inset ring-pink-700/10">
+                <a href={resource.link}>
+                  <span set:html={getIconText(resource.name)} />
+                </a>
+              </span>
+            ))
+        }
+      </div>
+    </div>
+  </div>
+</div>

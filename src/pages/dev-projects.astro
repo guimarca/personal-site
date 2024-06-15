@@ -1,0 +1,28 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import DevProject from "../components/DevProject.astro";
+
+import devProjects from "../../data/devProjects.json";
+---
+
+<BaseLayout title="Dev Projects" sideBarActiveItemID="dev-projects">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">Dev Projects</div>
+  </div>
+
+  <p class="mb-4">These are some of the projects I have worked on.</p>
+  {
+    devProjects.map((devCompany) => (
+      <div>
+        <div class="text-2xl w-full font-bold mb-5 mt-5">{devCompany.title}</div>
+        {
+          devCompany.projects.map((devProject) => (
+          <DevProject devProject={devProject}/>
+            <div class="divider my-0"></div>
+          ))
+        }
+      </div>
+      
+    ))
+  }
+</BaseLayout>

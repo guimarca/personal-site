@@ -1,0 +1,51 @@
+---
+import { getIconText } from "src/lib/icons";
+import type { Position } from "src/models";
+
+interface Props {
+  position: Position;
+}
+
+const { position } = Astro.props;
+---
+
+<div class="flex">
+  <div class="education__time">
+    <span class="w-4 h-4 bg-primary block rounded-full mt-1"></span>
+    <span
+      class="education__line bg-primary block h-full w-[2px] translate-x-[7px]"
+    ></span>
+  </div>
+  <div class="experience__data bd-grid px-5 pb-10">
+    <h3 class="font-semibold mb-1">
+      {position.title} at <a href={position.site.link}>{position.site.name}</a>
+      <br />
+      <span class="font-light text-sm"
+        >{position.date.from} - {position.date.to}</span
+      >
+    </h3>
+
+    <div class="flex items-center">
+      <a href={position.site.link} target="_blank">
+        <img
+          class="w-12 h-12 rounded"
+          src={position.site.img}
+          alt={position.site.name}
+        />
+      </a>
+    </div>
+
+    <div class="mt-2 mb-4 text-justify">
+      {position.description}
+    </div>
+    <div class="justify-end">
+      {
+        position.techStack.map((item) => (
+          <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10 mr-1 ">
+            <span set:html={getIconText(item)} />
+          </span>
+        ))
+      }
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+---
+import type { Conference } from "src/models";
+
+interface Props {
+  conference: Conference;
+}
+
+const { conference } = Astro.props;
+---
+
+<div class="mb-5">
+  <h4 class="font-bold">{conference.title}</h4>
+  <div>
+    {conference.month}, {conference.year}, {conference.location}
+  </div>
+  <div class="italic">
+    Presentation: {conference.role}
+  </div>
+</div>
