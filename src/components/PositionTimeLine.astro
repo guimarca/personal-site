@@ -29,7 +29,7 @@ const { position } = Astro.props;
       <a href={position.site.link} target="_blank">
         <img
           class="w-12 h-12 rounded"
-          src={position.site.img}
+          src={"/" + position.site.img}
           alt={position.site.name}
         />
       </a>
