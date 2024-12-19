@@ -12,14 +12,6 @@ import positions from "../../data/positions.json";
   </div>
 
   <div class="mb-5">
-    <div class="text-2xl w-full font-bold">Education</div>
-  </div>
-
-  <div class="time-line-container grid gap-4 mb-10">
-    {education.map((item) => <EducationTimeLineElement educationItem={item} />)}
-  </div>
-
-  <div class="mb-5">
     <div class="text-2xl w-full font-bold">Experience</div>
   </div>
 
@@ -29,5 +21,13 @@ import positions from "../../data/positions.json";
         <PositionTimeLineElement position={position} />
       ))
     }
+  </div>
+
+  <div class="mb-5">
+    <div class="text-2xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    {education.map((item) => <EducationTimeLineElement educationItem={item} />)}
   </div>
 </BaseLayout>
