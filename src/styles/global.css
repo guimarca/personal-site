@@ -1,7 +1,16 @@
-.time-line-container>div:last-child .education__time>.education__line {
-    display: none;
+.time-line-container > div:last-child .education__time > .education__line {
+  display: none;
 }
 
 a:hover {
-    color:  #DE3163 ;
+  color: #de3163;
+}
+
+.experience__data a {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.experience__data a:hover {
+  text-decoration: none;
 }
