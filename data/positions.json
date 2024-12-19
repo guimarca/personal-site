@@ -1,6 +1,37 @@
 [
   {
     "title": "Senior Backend developer",
+    "location": "Madrid (Spain) - Remote",
+    "site": {
+      "name": "Acoru",
+      "link": "https://acoru.com",
+      "img": "img/jobs/acoru.jpg"
+    },
+    "description": "Backend developer working on implementing a micro-services, event-based platform for fraud prevention in the banking sector.  Implementing and designing the backend components and applications, along with its ifrastructure and databases.",
+    "techStack": [
+      "Typescript",
+      "nestjs",
+      "nodejs",
+      "Python",
+      "Java",
+      "NATS",
+      "Elasticsearch",
+      "MySQL",
+      "redis",
+      "kubernetes",
+      "Linux",
+      "Docker",
+      "Github",
+      "Github actions",
+      "bash"
+    ],
+    "date": {
+      "from": "11/2023",
+      "to": "now"
+    }
+  },
+  {
+    "title": "Senior Backend developer",
     "location": "London (United Kingdom) - Remote",
     "site": {
       "name": "Cytora",
@@ -26,7 +57,7 @@
     ],
     "date": {
       "from": "08/2022",
-      "to": "now"
+      "to": "10/2023"
     }
   },
   {

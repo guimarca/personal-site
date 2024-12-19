@@ -1,5 +1,5 @@
-[
-  {
+{
+  "unicc": {
     "title": "@ UNICC",
     "projects": [
       {
@@ -60,7 +60,7 @@
       }
     ]
   },
-  {
+  "sopra": {
     "title": "@ Sopra Steria",
     "projects": [
       {
@@ -84,7 +84,7 @@
       }
     ]
   },
-  {
+  "lineex": {
     "title": "@ LINEEX",
     "projects": [
       {
@@ -132,7 +132,7 @@
             "link": "https://participants.lineex.es"
           },
           {
-            "name": "recruitment website",
+            "name": "recruitment rebsite",
             "link": "img/register.png"
           },
           {
@@ -153,7 +153,7 @@
       }
     ]
   },
-  {
+  "freelance": {
     "title": "freelance",
     "projects": [
       {
@@ -205,4 +205,4 @@
       }
     ]
   }
-]
+}

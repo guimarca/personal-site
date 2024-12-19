@@ -12,7 +12,7 @@ import devProjects from "../../data/devProjects.json";
 
   <p class="mb-4">These are some of the projects I have worked on.</p>
   {
-    devProjects.map((devCompany) => (
+    Object.values(devProjects).map((devCompany) => (
       <div>
         <div class="text-2xl w-full font-bold mb-5 mt-5">{devCompany.title}</div>
         {
