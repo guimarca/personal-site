@@ -17,6 +17,7 @@
       "NATS",
       "Elasticsearch",
       "MySQL",
+      "Cassandra",
       "redis",
       "kubernetes",
       "Linux",

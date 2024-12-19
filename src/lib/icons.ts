@@ -40,6 +40,10 @@ const iconsClasses = [
         exactMatch: ["nestjs"]
     },
     {
+        classes: "devicon-nodejs-plain-wordmark",
+        exactMatch: ["node", "nodejs"]
+    },
+    {
         classes: "devicon-react-original",
         exactMatch: ["react"]
     },
