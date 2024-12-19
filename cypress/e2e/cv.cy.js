@@ -3,7 +3,7 @@ it('should render the page properly', () => {
 
     page.get('.text-3xl').should('have.text', 'CV');
 
-    const subSections = ['Education', 'Experience'];
+    const subSections = ['Experience', 'Education'];
     page.get('.text-2xl').should('have.length', subSections.length).each((value, index) => {
         cy.wrap(value).should('have.text', subSections[index]);
     });
