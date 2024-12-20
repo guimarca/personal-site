@@ -30,13 +30,15 @@ const { position } = Astro.props;
 
       <div class="flex-1">
         <h3 class="font-semibold mb-1">
-          {position.title}
-          <span style="font-weight: 400">at</span>
-          <a href={position.site.link}>{position.site.name}</a>
-          <br />
-          <span class="font-light text-sm"
-            >{position.date.from} - {position.date.to}</span
-          >
+          <div>
+            {position.title}
+            <span style="font-weight: 400">at</span>
+            <a href={position.site.link}>{position.site.name}</a>
+          </div>
+
+          <div class="font-light text-sm">
+            {position.date.from} - {position.date.to}
+          </div>
         </h3>
       </div>
     </div>

@@ -3,7 +3,7 @@ import description from '../../data/description.json'
 it('should have the menu', () => {
     const page = cy.visit('./dist/index.html');
 
-    page.get('.menu').should('have.text', ' Home CV  Dev Projects   Academic work  Contact ')
+    page.get('.menu').should('have.text', '   Home    CV    Dev Projects    Academic work    Contact  ')
 });
 
 it('should render the page properly', () => {
