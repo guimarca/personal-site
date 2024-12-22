@@ -3,6 +3,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import description from "../../data/description.json";
 ---
 
+<style lang="scss">
+  @use "../styles/pong.scss";
+</style>
+
 <BaseLayout title="Home" sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
     <div class="text-xl py-1">Hey there 👋</div>
@@ -15,6 +19,14 @@ import description from "../../data/description.json";
     </div>
     <div class="mt-8 text-center">
       <a class="btn" href="/contact">Contact me!</a>
+    </div>
+    <div class="pt-10">
+      <div class="field">
+        <div class="net"></div>
+        <div class="ping"></div>
+        <div class="pong"></div>
+        <div class="ball"></div>
+      </div>
     </div>
   </div>
 </BaseLayout>
