@@ -5,12 +5,37 @@ import Pong from "@components/Pong.astro";
 ---
 
 <style lang="scss">
-  @use "../styles/pong.scss";
+  .waving {
+    float: left;
+    padding-right: 8px;
+    animation: waving 6s infinite;
+  }
+
+  @keyframes waving {
+    45% {
+      transform: rotate(0);
+    }
+    47% {
+      transform: rotate(-30deg);
+    }
+    50% {
+      transform: rotate(40deg);
+    }
+    52% {
+      transform: rotate(-30deg);
+    }
+    54% {
+      transform: rotate(40deg);
+    }
+    58% {
+      transform: rotate(0);
+    }
+  }
 </style>
 
 <BaseLayout title="Home" sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
-    <div class="text-xl py-1">Hey there 👋</div>
+    <div class="text-xl py-1">Hey there <div class="waving">👋</div></div>
     <div class="text-5xl font-bold">Guillem Martínez-Cànovas</div>
     <div class="text-3xl py-3 font-bold">{description.jobTitle}</div>
     <div class="py-2">
