@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import description from "../../data/description.json";
+import Pong from "@components/Pong.astro";
 ---
 
 <style lang="scss">
@@ -21,12 +22,7 @@ import description from "../../data/description.json";
       <a class="btn" href="/contact">Contact me!</a>
     </div>
     <div class="pt-10">
-      <div class="field">
-        <div class="net"></div>
-        <div class="ping"></div>
-        <div class="pong"></div>
-        <div class="ball"></div>
-      </div>
+      <Pong />
     </div>
   </div>
 </BaseLayout>
