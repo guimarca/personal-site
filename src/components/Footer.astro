@@ -1,6 +1,14 @@
+---
+const year = new Date().getFullYear();
+---
+
 <footer class="footer footer-center block mb-5 pt-10">
-  <div class="pb-2">
-    &copy; {new Date().getFullYear()} Guillem
+  <div class="pb-2" id="footer-text">
+    &copy; {year} Guillem
   </div>
 </footer>
-<style></style>
+
+<script is:inline>
+  document.getElementById("footer-text").innerHTML =
+    `&copy; ${new Date().getFullYear()} Guillem`;
+</script>
