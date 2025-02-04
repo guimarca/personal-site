@@ -41,7 +41,7 @@ npm i -g npm-check-updates
 Then:
 
 ```bash
-ncu -u
+ncu --target semver -u
 npm update
 ```
 
