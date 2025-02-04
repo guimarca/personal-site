@@ -25,6 +25,9 @@ jobs:
           cache: "pnpm"
           cache-dependency-path: pnpm-lock.yaml
 
+      - name: Install dependencies ⬇️
+        run: pnpm i
+
       - name: Build 🛠
         run: npm run build
 
