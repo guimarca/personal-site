@@ -13,19 +13,23 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Use Node.js
+      - name: Install pnpm ⬇️
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Setup Node.js ⬇️
         uses: actions/setup-node@v4
         with:
-          node-version: "22.x"
-
-      - name: Install dependencies ⬇️
-        run: npm i -g pnpm && pnpm install
+          node-version: 22
+          cache: "pnpm"
+          cache-dependency-path: pnpm-lock.yaml
 
       - name: Build 🛠
         run: npm run build
 
       - name: Test 🧪
-        run: cypress install && npm run test:e2e
+        uses: cypress-io/github-action@v6
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
