@@ -42,6 +42,7 @@ Then:
 
 ```bash
 ncu --target semver -u
+pnpm i
 npm update
 ```
 
