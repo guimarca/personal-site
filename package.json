@@ -13,20 +13,20 @@
     "test:e2e": "npx cypress run --headless"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.0.8",
-    "@astrojs/rss": "^4.0.11",
-    "@astrojs/sitemap": "^3.2.1",
+    "@astrojs/mdx": "^4.3.1",
+    "@astrojs/rss": "^4.0.12",
+    "@astrojs/sitemap": "^3.4.2",
     "@astrojs/tailwind": "^5.1.5",
-    "astro": "^5.9.2",
-    "daisyui": "^4.12.23",
+    "astro": "^5.12.4",
+    "daisyui": "^4.12.24",
     "dayjs": "^1.11.13",
-    "devicon": "^2.16.0",
+    "devicon": "^2.17.0",
     "sharp": "^0.33.5",
     "tailwindcss": "^3.4.17"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.16",
-    "cypress": "^13.17.0",
-    "sass": "^1.83.4"
+    "cypress": "^14.5.3",
+    "sass": "^1.89.2"
   }
 }
