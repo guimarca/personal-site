@@ -15,7 +15,7 @@
   "dependencies": {
     "@astrojs/mdx": "^4.3.8",
     "@astrojs/sitemap": "^3.5.1",
-    "@astrojs/tailwind": "^5.1.5",
+    "@astrojs/tailwind": "^6.0.2",
     "astro": "^5.15.1",
     "daisyui": "^4.12.24",
     "dayjs": "^1.11.18",
