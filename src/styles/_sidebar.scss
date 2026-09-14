@@ -1,0 +1,163 @@
+@use "breakpoints" as bp;
+
+// The checkbox is the only state the drawer needs: no JavaScript involved.
+.sidebar-toggle {
+  position: fixed;
+  width: 0;
+  height: 0;
+  appearance: none;
+  opacity: 0;
+}
+
+.sidebar {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 40;
+  display: grid;
+  width: 100%;
+  height: 100dvh;
+  overflow: hidden;
+  pointer-events: none;
+
+  > * {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+}
+
+.sidebar__overlay {
+  place-self: stretch;
+  background-color: rgb(0 0 0 / 40%);
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.sidebar__panel {
+  display: flex;
+  flex-direction: column;
+  width: var(--sidebar-width);
+  min-height: 100%;
+  padding: 0.5rem 0.5rem 0;
+  background-color: var(--color-base-200);
+  color: var(--color-base-content);
+  transform: translateX(-100%);
+  transition: transform 300ms ease-out;
+  will-change: transform;
+}
+
+.sidebar-toggle:checked ~ .sidebar {
+  overflow-y: auto;
+  pointer-events: auto;
+
+  .sidebar__overlay {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .sidebar__panel {
+    transform: translateX(0);
+  }
+}
+
+// From here on the sidebar is a permanent column again.
+@media (min-width: bp.$lg) {
+  .sidebar-toggle {
+    display: none;
+  }
+
+  .sidebar {
+    position: sticky;
+    display: block;
+    width: auto;
+    overflow-y: auto;
+    pointer-events: auto;
+  }
+
+  .sidebar__overlay {
+    display: none;
+  }
+
+  .sidebar__panel {
+    transform: none;
+  }
+}
+
+.sidebar__avatar {
+  width: fit-content;
+  margin: 1.25rem auto 1.5rem;
+
+  img {
+    width: 8.5rem;
+    height: 8.5rem;
+    border-radius: 9999px;
+    object-fit: cover;
+    transition: transform var(--transition-fast);
+  }
+
+  a:hover img {
+    transform: scale(1.02);
+  }
+}
+
+.sidebar__nav {
+  display: flex;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+// Fades the menu out behind the social links pinned to the bottom.
+.sidebar__fade {
+  position: sticky;
+  bottom: 2.5rem;
+  height: 3rem;
+  background-color: var(--color-base-200);
+  mask-image: linear-gradient(transparent, #000000);
+  pointer-events: none;
+}
+
+.sidebar__social {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  padding: 0.25rem 1rem 1.25rem;
+  background-color: var(--color-base-200);
+
+  a {
+    margin: 0 0.75rem;
+  }
+}
+
+.menu {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 0.5rem;
+
+  li {
+    margin: 0.25rem 0;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius-btn);
+    font-size: 1rem;
+    transition: background-color var(--transition-fast), color var(--transition-fast);
+
+    &:hover {
+      background-color: var(--color-base-content-10);
+    }
+
+    &.is-active {
+      background-color: var(--color-base-300);
+    }
+  }
+}

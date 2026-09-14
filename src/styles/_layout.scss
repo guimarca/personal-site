@@ -1,0 +1,97 @@
+@use "breakpoints" as bp;
+
+// The sidebar sits in the first grid column and the content in the second.
+// Below the large breakpoint the sidebar is taken out of the flow (it becomes
+// an off-canvas drawer), so the first column collapses to zero width.
+.layout {
+  position: relative;
+  display: grid;
+  grid-auto-columns: max-content auto;
+  width: 100%;
+}
+
+.layout__content {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  min-width: 0;
+}
+
+.page {
+  @media (min-width: bp.$md) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.page__main {
+  // Without an explicit width the flex item shrinks to fit, which leaves the
+  // short pages (home, contact) narrower than the rest.
+  width: 100%;
+  max-width: 100vw;
+  padding: 2.5rem 1.5rem 1.5rem;
+
+  @media (min-width: bp.$lg) {
+    max-width: var(--content-max-width);
+  }
+}
+
+// Shown only while the sidebar is an off-canvas drawer.
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 4rem;
+  background-color: color-mix(in oklch, var(--color-base-100) 90%, transparent);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
+
+  @media (min-width: bp.$lg) {
+    display: none;
+  }
+}
+
+.topbar__inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 4rem;
+  padding: 0.5rem;
+}
+
+.topbar__start,
+.topbar__end {
+  display: flex;
+  width: 50%;
+}
+
+.topbar__start {
+  justify-content: flex-start;
+}
+
+.topbar__end {
+  justify-content: flex-end;
+}
+
+.topbar__center {
+  flex-shrink: 0;
+}
+
+.topbar__title {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.site-footer {
+  display: block;
+  width: 100%;
+  margin-bottom: 1.25rem;
+  padding-top: 2.5rem;
+  text-align: center;
+}
+
+.site-footer__text {
+  padding-bottom: 0.5rem;
+}

@@ -1,0 +1,118 @@
+// ----- home -----------------------------------------------------------------
+
+.home {
+  margin-top: 1.25rem;
+  padding-bottom: 3rem;
+}
+
+.home__greeting {
+  padding: 0.25rem 0;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.home__wave {
+  float: left;
+  padding-right: 8px;
+  animation: waving 6s infinite;
+}
+
+.home__name {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+  overflow-wrap: break-word;
+}
+
+.home__job-title {
+  padding: 0.75rem 0;
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 2.25rem;
+}
+
+.home__intro {
+  padding: 0.5rem 0;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.home__cta {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.home__pong {
+  padding-top: 2.5rem;
+}
+
+@keyframes waving {
+  45% {
+    transform: rotate(0);
+  }
+  47% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(40deg);
+  }
+  52% {
+    transform: rotate(-30deg);
+  }
+  54% {
+    transform: rotate(40deg);
+  }
+  58% {
+    transform: rotate(0);
+  }
+}
+
+// ----- contact --------------------------------------------------------------
+
+.contact__email {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.contact__email-address {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.contact__profiles {
+  padding: 2.5rem;
+  text-align: center;
+  font-size: 3rem;
+  line-height: 1;
+
+  a {
+    padding: 0.75rem;
+  }
+}
+
+// ----- 404 ------------------------------------------------------------------
+
+.not-found {
+  text-align: center;
+}
+
+.not-found__emoji,
+.not-found__code {
+  font-size: 8rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.not-found__emoji {
+  margin-bottom: 1rem;
+}
+
+.not-found__code {
+  margin-bottom: 0.5rem;
+}
+
+.not-found__message {
+  margin-bottom: 2.25rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}

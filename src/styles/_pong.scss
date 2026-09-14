@@ -1,0 +1,210 @@
+// A decorative pong rally, adapted to the site palette.
+$pong-color: #444444;
+
+.pong {
+  position: relative;
+  width: 200px;
+  height: 130px;
+  margin: 0 auto;
+  border: 3px solid $pong-color;
+}
+
+.pong__net {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 100%;
+  transform: translateX(-50%);
+  border: 3px dashed $pong-color;
+}
+
+.pong__paddle {
+  position: absolute;
+  width: 4px;
+  height: 16px;
+  background: $pong-color;
+}
+
+.pong__paddle--left {
+  left: 6%;
+  animation: pong-left 6s infinite linear;
+}
+
+.pong__paddle--right {
+  right: 6%;
+  animation: pong-right 6s infinite linear;
+}
+
+.pong__ball {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: $pong-color;
+  animation: pong-ball 6s infinite linear;
+}
+
+@keyframes pong-ball {
+  0% {
+    top: 34%;
+    left: 52%;
+  }
+  8.3% {
+    top: 52%;
+    left: 90%;
+  }
+  24.9% {
+    top: 85%;
+    left: 8%;
+  }
+  30% {
+    top: 98%;
+    left: 27%;
+  }
+  41.5% {
+    top: 70%;
+    left: 90%;
+  }
+  58.1% {
+    top: 55%;
+    left: 8%;
+  }
+  74.7% {
+    top: 13%;
+    left: 90%;
+  }
+  79% {
+    top: 1%;
+    left: 70%;
+  }
+  91.3% {
+    top: 22%;
+    left: 8%;
+  }
+  100% {
+    top: 34%;
+    left: 52%;
+  }
+}
+
+@keyframes pong-left {
+  0% {
+    top: 10%;
+  }
+  5% {
+    top: 10%;
+  }
+  9% {
+    top: 24%;
+  }
+  13% {
+    top: 17%;
+  }
+  24.8% {
+    background: $pong-color;
+  }
+  24.9% {
+    top: 82%;
+    background: var(--color-primary);
+  }
+  35% {
+    background: $pong-color;
+  }
+  47% {
+    top: 37%;
+  }
+  52% {
+    top: 41%;
+  }
+  56% {
+    top: 64%;
+  }
+  58% {
+    background: $pong-color;
+  }
+  58.1% {
+    top: 54%;
+    background: var(--color-primary);
+  }
+  68% {
+    background: $pong-color;
+  }
+  70% {
+    top: 74%;
+  }
+  84% {
+    top: 12%;
+  }
+  91% {
+    background: $pong-color;
+  }
+  91.3% {
+    top: 18%;
+    background: var(--color-primary);
+  }
+  100% {
+    top: 10%;
+    background: $pong-color;
+  }
+}
+
+@keyframes pong-right {
+  0% {
+    top: 90%;
+  }
+  8.1% {
+    background: $pong-color;
+  }
+  8.3% {
+    top: 51%;
+    background: var(--color-primary);
+  }
+  18% {
+    background: $pong-color;
+  }
+  20% {
+    top: 60%;
+  }
+  25% {
+    top: 34%;
+  }
+  41.4% {
+    background: $pong-color;
+  }
+  41.5% {
+    top: 68%;
+    background: var(--color-primary);
+  }
+  46% {
+    top: 36%;
+  }
+  52% {
+    top: 18%;
+    background: $pong-color;
+  }
+  58.1% {
+    top: 53%;
+  }
+  66% {
+    top: 14%;
+  }
+  70% {
+    top: 20%;
+  }
+  74.3% {
+    background: $pong-color;
+  }
+  74.7% {
+    top: 10%;
+    background: var(--color-primary);
+  }
+  84% {
+    background: $pong-color;
+  }
+  91.3% {
+    top: 10%;
+  }
+  100% {
+    top: 90%;
+  }
+}

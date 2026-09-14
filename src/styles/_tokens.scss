@@ -1,0 +1,33 @@
+// Design tokens. The palette reproduces the daisyUI "garden" theme the
+// previous version of this site used; the shades daisyUI derived at build
+// time are derived here by the browser with color-mix().
+:root {
+  color-scheme: light;
+
+  --color-primary: oklch(62.45% 0.278 3.8363600743192197);
+  --color-primary-content: #ffffff;
+  --color-secondary: #8e4162;
+  --color-accent: #5c7f67;
+  --color-accent-content: color-mix(in oklch, #5c7f67, black 80%);
+  --color-neutral: #291e00;
+  --color-neutral-content: #e9e7e7;
+
+  --color-base-100: #e9e7e7;
+  --color-base-200: color-mix(in oklch, #e9e7e7, black 7%);
+  --color-base-300: color-mix(in oklch, #e9e7e7, black 14%);
+  --color-base-content: #100f0f;
+
+  // Translucent overlays, used for hover states and hairlines.
+  --color-base-content-10: color-mix(in oklch, var(--color-base-content) 10%, transparent);
+  --color-base-content-20: color-mix(in oklch, var(--color-base-content) 20%, transparent);
+
+  --color-link-hover: #de3163;
+
+  --radius-btn: 0.5rem;
+  --radius-box: 0.5rem;
+
+  --sidebar-width: 19rem;
+  --content-max-width: 1200px;
+
+  --transition-fast: 200ms cubic-bezier(0, 0, 0.2, 1);
+}
